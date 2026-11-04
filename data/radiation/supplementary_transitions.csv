@@ -1,0 +1,3 @@
+id;enabled;lower;upper;A_s;spectral_kind;source;uncertainty
+RAD_HeI_2_3S__HeI_1_1S;true;HeI_1_1S;HeI_2_3S;1.27e-4;line_m1;Drake 1971 DOI:10.1103/PhysRevA.3.908;not assigned here
+RAD_HeI_2_1S__HeI_1_1S;true;HeI_1_1S;HeI_2_1S;51.3;two_photon;Drake Victor Dalgarno 1969 DOI:10.1103/PhysRev.180.25;historical value - uncertainty not assigned here

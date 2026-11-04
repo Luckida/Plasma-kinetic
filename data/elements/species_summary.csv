@@ -1,0 +1,2 @@
+﻿species;element;charge;levels;lines;cross_section_channels;missing_processes;status;runtime_adapter;directory;download_errors
+H I;H;0;15;30;240;6;incomplete;not_connected;/workspace/scratch/4abf68943287/github_release/plasma_kinetics_v2_8_2/configs/../data/elements/H/H_0_n9;0

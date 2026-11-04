@@ -1,0 +1,104 @@
+{
+  "schema": "AtomicPack-1",
+  "species": "He II",
+  "element": "He",
+  "charge": 1,
+  "nmax": 9,
+  "runtime_adapter": "mixture_ls",
+  "status": "data_preparation_only",
+  "energy_reference": "ground_of_this_ion",
+  "sources": {
+    "adas_h0.dat": {
+      "url": "https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat",
+      "sha256_bytes": "d462f8a595726446023451bf869e83ba3063e14cbb55cb1a7ccb08950fb87e48",
+      "sha256_science": "accffdd1b3575111542acab3d7931402416851c7ef9f9f93e25fa6d051c73a25",
+      "source_version": "pinned",
+      "reference": "Anderson et al. 2000, correction 2002; OPEN-ADAS HA00",
+      "retrieved_utc": "2026-10-31T16:34:14.605002+00:00"
+    },
+    "ccc_h0.zip": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/H/I/ELECTRON_IMPACT/e-H_XSEC_LS.zip",
+      "sha256_bytes": "57730e72656639e92c47c1b8457db0edac5a69ae93db6c357471a93759af1fc9",
+      "sha256_science": "57730e72656639e92c47c1b8457db0edac5a69ae93db6c357471a93759af1fc9",
+      "source_version": "pinned",
+      "reference": "Bray & Stelbovics 1992 PRA 46 6995; CCC August 2026",
+      "retrieved_utc": "2026-10-31T16:34:22.458293+00:00"
+    },
+    "adas_index_H.html": {
+      "url": "https://open.adas.ac.uk/element/h",
+      "sha256_bytes": "5e3a767c037faa23b55c1657613814c90684fc171e3a9e065c9f73eae7759519",
+      "sha256_science": "5e3a767c037faa23b55c1657613814c90684fc171e3a9e065c9f73eae7759519",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "",
+      "retrieved_utc": "2026-10-31T16:34:27.118548+00:00"
+    },
+    "adas_he0.dat": {
+      "url": "https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat",
+      "sha256_bytes": "c9ffa71963ad471debc3430f2c86de333e51bf6374d85ef270f86875b8bc30ff",
+      "sha256_science": "0db91cebdfc501567c96f8bada6107c6b674597f6676c7c9eeed30099bc3a409",
+      "source_version": "pinned",
+      "reference": "Paton–Bryans 2004, OPEN-ADAS PB04",
+      "retrieved_utc": "2026-10-31T16:34:30.486905+00:00"
+    },
+    "ccc_he0.zip": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/He/I/ELECTRON_IMPACT/e-He_sig.zip",
+      "sha256_bytes": "d68ba39d81c8252043e12f92155c1a9ab73117b55abfd971b98d6a65c6993a85",
+      "sha256_science": "d68ba39d81c8252043e12f92155c1a9ab73117b55abfd971b98d6a65c6993a85",
+      "source_version": "pinned",
+      "reference": "Fursa & Bray 1995 PRA 52 1279; CCC April 2026",
+      "retrieved_utc": "2026-10-31T16:34:36.173800+00:00"
+    },
+    "adas_index_He.html": {
+      "url": "https://open.adas.ac.uk/element/he",
+      "sha256_bytes": "8f7df261018baad6858dbb90aa41007dfe31ee121bd77d02f1f844012b77e2f8",
+      "sha256_science": "8f7df261018baad6858dbb90aa41007dfe31ee121bd77d02f1f844012b77e2f8",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "",
+      "retrieved_utc": "2026-10-31T16:34:42.619020+00:00"
+    },
+    "adas_he1.dat": {
+      "url": "https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat",
+      "sha256_bytes": "47d3244b4f10b10408aa0c0e2f6110551db5f2f54c60b2bed1dbfdbe63d89b04",
+      "sha256_science": "12d99621fe222acdc05f8cb08f95dfcaf0e27e9ab2cc4272ae82c02479ae433e",
+      "source_version": "pinned",
+      "reference": "OPEN-ADAS CPB03, Connor Ballance 28 June 2003; LS n<=5",
+      "retrieved_utc": "2026-10-31T16:52:04.345882+00:00"
+    },
+    "ccc_he1.zip": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/He/II/ELECTRON_IMPACT/e-HeII_XSEC_LS.zip",
+      "sha256_bytes": "e32f7d22a3dc54e7981e93369bb98ddd38109a784cff608e59e9657b3a3558db",
+      "sha256_science": "e32f7d22a3dc54e7981e93369bb98ddd38109a784cff608e59e9657b3a3558db",
+      "source_version": "pinned",
+      "reference": "Bray & Fursa 1993; CCC He II May 2026",
+      "retrieved_utc": "2026-10-31T16:52:12.390055+00:00"
+    }
+  },
+  "gaps": [],
+  "adf04": {
+    "parents": [
+      {
+        "parent": 1,
+        "threshold_cm1": 438909.0,
+        "term": "1S"
+      }
+    ],
+    "unsupported_transition_codes": {},
+    "infinite_temperature_upsilon": "extra final value, when present, not exported as a finite-temperature node",
+    "temperature_min_K": 11600.0,
+    "temperature_max_K": 1000000.0
+  },
+  "download_errors": 0,
+  "catalogue_sha256": "e710d329465ddc08f486f286c90a63b8bd3a9340d1f5904d0a9335e87430cd1a",
+  "catalogue_selection_sha256": "957ca1b723bda9de15922d9861f61bc1700ecb6811ae292b0299b715be5039dc",
+  "kinetic_ready": false,
+  "kinetic_ready_note": "MixtureSlab consumes these actual levels, lines and energy cross sections; kinetic closure still requires explicit coverage checks.",
+  "files_sha256": {
+    "electron_cross_sections.csv": "c98a740a4908821687950a86e7d1fc78430cfa964cd67c0c309f5b1fe438182c",
+    "candidates.json": "c2f63747474659cd884d245c4777b6683bffbb5d6db4ae1410de5fb5b3ae6028",
+    "process_coverage.csv": "aef5dc758d46bdd64ad12953368c8bdb1a8917084fbb53b641d9655837ee875d",
+    "lines.csv": "3debf86c6f1adc8c7768a39f193dd8364306711f89aa36a12b728865c7f3de39",
+    "cross_section_catalogue.csv": "fc0b13d92498e898a1db8c8e2c07d4b1b62f7cba0180c3f11abbebab199e7340",
+    "levels.csv": "fdaebe06e89ba16dfddc62283ecde1102c313b061ac6a9965b7d7b87c81bbebc",
+    "maxwellian_upsilon.csv": "383e029c37f84fd0ed7ab3fa9bf7c6fbd59f3ec81540e7f6dc79b3fdf6cc28a5"
+  }
+}

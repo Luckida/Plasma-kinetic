@@ -1,0 +1,70 @@
+{
+  "schema": "ElementData-1",
+  "element": "Li",
+  "ground_stages": [
+    {
+      "charge": 0,
+      "g": 2,
+      "n": 2,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "1s2 2s",
+      "ionization_eV": 5.392
+    },
+    {
+      "charge": 1,
+      "g": 1,
+      "n": 1,
+      "multiplicity": 1,
+      "L": 0,
+      "configuration": "1s2",
+      "ionization_eV": 75.64
+    },
+    {
+      "charge": 2,
+      "g": 2,
+      "n": 1,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "1s",
+      "ionization_eV": 122.5
+    },
+    {
+      "charge": 3,
+      "g": 1,
+      "configuration": "bare nucleus"
+    }
+  ],
+  "sources": {
+    "adas_li0": {
+      "url": "https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat",
+      "sha256": "6d784be36837f9092aa57b93f401cfc4a089af0825189dd9602d99eb6fab67ab",
+      "hash_mode": "adas_science",
+      "format": "adf04_ls3",
+      "reference": "Griffin et al. 2001, PRA 64 032718; OPEN-ADAS CPB02"
+    },
+    "adas_li1": {
+      "url": "https://open.adas.ac.uk/download/adf04/helike/helike_cpb02%5D%5Bli1.dat",
+      "sha256": "93f20f8930df6df9e698ec4839f60a4847ba268f4efc2c3d3c13919522490ecd",
+      "hash_mode": "adas_science",
+      "format": "adf04_ls3",
+      "reference": "OPEN-ADAS CPB02 Li II LS"
+    }
+  },
+  "species": {
+    "Li_0": {
+      "mass_u": 6.94,
+      "adf04": "adas_li0",
+      "electron_cross_sections": "ccc_li_form",
+      "ccc_labels": "lithium",
+      "runtime_adapter": null
+    },
+    "Li_1": {
+      "mass_u": 6.94,
+      "adf04": "adas_li1",
+      "electron_cross_sections": null,
+      "runtime_adapter": null
+    }
+  },
+  "ground_stages_note": "Inherited v1.8 ground-stage data. Rounded Verner thresholds are used where no imported ADF04 parent threshold is available; not a complete excited-ion model."
+}

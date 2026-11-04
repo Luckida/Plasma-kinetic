@@ -1,0 +1,56 @@
+{
+  "schema": "SourceGuide-1",
+  "review_date": "2026-10-30",
+  "sources": [
+    {
+      "name": "NIST ASD",
+      "url": "https://physics.nist.gov/asd",
+      "role": "levels, ground states, ionization energies; not collision cross sections"
+    },
+    {
+      "name": "OPEN-ADAS",
+      "url": "https://open.adas.ac.uk/",
+      "role": "ADF04 LS levels, A and Maxwellian upsilon; native/canonical CSV adapter also available"
+    },
+    {
+      "name": "CCC",
+      "url": "https://atom.curtin.edu.au/ccc-db/index.html",
+      "role": "energy-resolved electron-impact cross sections; projectile and units explicitly checked"
+    },
+    {
+      "name": "LXCat",
+      "url": "https://lxcat.net/",
+      "role": "common BOLSIG/LXCat exports imported only with explicit state mapping and units; no account or browser scraping"
+    },
+    {
+      "name": "UMIST Rate22",
+      "url": "https://umistdatabase.uk/downloads",
+      "role": "state-integrated thermal reaction candidates; photorates and unsupported laws retained separately"
+    },
+    {
+      "name": "KIDA",
+      "url": "https://kida.astrochem-tools.org/",
+      "role": "additional source for manual curation/canonical input; no KIDA-specific automatic parser is claimed"
+    },
+    {
+      "name": "IAEA ALADDIN/AMBDAS",
+      "url": "https://amdis.iaea.org/",
+      "role": "additional published collision data to curate through canonical CSV; no universal parser is claimed"
+    },
+    {
+      "name": "He et al. 2025",
+      "url": "https://doi.org/10.1088/1361-6595/adffe6",
+      "role": "He*-He* Penning/association and He2+ recombination model coefficients, table A1"
+    },
+    {
+      "name": "Roberge & Dalgarno 1982",
+      "url": "https://doi.org/10.1086/159849",
+      "role": "He*-H total ionization and AI branching endpoints; interpolation explicitly labelled"
+    },
+    {
+      "name": "Lindsay & Stebbings 2005",
+      "url": "https://doi.org/10.1029/2005JA011298",
+      "role": "H+-H resonant charge transfer energy cross section; stated validity domain"
+    }
+  ]
+}

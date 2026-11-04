@@ -1,0 +1,36 @@
+{
+  "schema": "ParticleReactions-1",
+  "reviewed": false,
+  "elements": [
+    "He",
+    "X"
+  ],
+  "selectors": {
+    "He(2^3S)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 0
+    }
+  },
+  "reactions": [
+    {
+      "id": "YOUR_REFERENCE:He3S_X:PI",
+      "kind": "penning",
+      "reactants": {
+        "He(2^3S)": 1,
+        "X": 1
+      },
+      "products": {
+        "He": 1,
+        "X+": 1,
+        "e": 1
+      },
+      "cross_section_id": "YOUR_REFERENCE:He3S_X:PI",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "REPLACE_WITH_PRIMARY_DOI_AND_TABLE",
+      "model_note": "Document assumptions, energy frame, state averaging, domain and any estimate."
+    }
+  ]
+}

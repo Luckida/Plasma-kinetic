@@ -1,0 +1,46 @@
+{
+  "schema": "ElementData-1",
+  "element": "H",
+  "ground_stages": [
+    {
+      "charge": 0,
+      "g": 2,
+      "n": 1,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "1s",
+      "ionization_eV": 13.6
+    },
+    {
+      "charge": 1,
+      "g": 1,
+      "configuration": "bare nucleus"
+    }
+  ],
+  "sources": {
+    "adas_h0": {
+      "url": "https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat",
+      "sha256": "accffdd1b3575111542acab3d7931402416851c7ef9f9f93e25fa6d051c73a25",
+      "hash_mode": "adas_science",
+      "format": "adf04_ls3",
+      "reference": "Anderson et al. 2000, correction 2002; OPEN-ADAS HA00"
+    },
+    "ccc_h0": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/H/I/ELECTRON_IMPACT/e-H_XSEC_LS.zip",
+      "sha256": "57730e72656639e92c47c1b8457db0edac5a69ae93db6c357471a93759af1fc9",
+      "hash_mode": "bytes",
+      "format": "ccc_zip",
+      "reference": "Bray & Stelbovics 1992 PRA 46 6995; CCC August 2026"
+    }
+  },
+  "species": {
+    "H_0": {
+      "mass_u": 1.008,
+      "adf04": "adas_h0",
+      "electron_cross_sections": "ccc_h0",
+      "ccc_labels": "hydrogenic",
+      "runtime_adapter": null
+    }
+  },
+  "ground_stages_note": "Inherited v1.8 ground-stage data. Rounded Verner thresholds are used where no imported ADF04 parent threshold is available; not a complete excited-ion model."
+}

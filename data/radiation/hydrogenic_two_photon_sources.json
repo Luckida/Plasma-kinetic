@@ -1,0 +1,10 @@
+{
+  "source_url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/source/atmdat_2photon.cpp",
+  "source_sha256": "219ac19b839e8af7a2474cd86e6282963d904b51f97db2f35590b888e6c689ab",
+  "output_sha256": "ba4ee00cca22938cd1506760174914283c5fa4edd751a5aeb3bb38f0303b6a34",
+  "table": "Z=1..3 Hydro2NuEnergies and Hydro2NuShapeFunc; reflect around y=0.5 at runtime",
+  "source_interpolation": "Cloudy comments: Goldman & Drake 1981 values; Z=2 and 3 shapes interpolated from Z=1 and 20",
+  "rate": "8.2293 Z^6 s^-1, nonrelativistic hydrogenic scaling; Chluba & Sunyaev 2008",
+  "reproduce": "Source arrays Hydro2NuEnergies and Hydro2NuShapeFunc at the pinned URL; Z=1..3 table included with its SHA256.",
+  "license": "Cloudy_license.txt"
+}

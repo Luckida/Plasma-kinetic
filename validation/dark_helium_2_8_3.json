@@ -1,0 +1,508 @@
+{
+  "version": "2.8.3",
+  "scope": "Real stored He LS levels, A, CCC electron cross sections and photo tables; implementation regression, not an experimental validation.",
+  "line_wing_widths": 300.0,
+  "cases": [
+    {
+      "electrons_initial_cm3": 0.0,
+      "metastable_decay": false,
+      "configuration": {
+        "schema": "MixtureKineticSlab-2.1",
+        "atomic_data": {
+          "species": [
+            "He"
+          ],
+          "nmax": 9,
+          "prepared_directory": "../data/elements",
+          "offline": true,
+          "element_directory": "../data/elements",
+          "cache_directory": "../cache/atomic_sources"
+        },
+        "initial_cm3": {
+          "He_0:L004": 100000000.0
+        },
+        "level_selection": {
+          "mode": "all",
+          "relative_tolerance": 1e-06,
+          "forced_levels": [
+            "He_0:L002",
+            "He_0:L004"
+          ],
+          "missing_data": "report"
+        },
+        "electron_initial": {
+          "Te_eV": 0.8,
+          "kind": "maxwellian",
+          "match_moments": true,
+          "density_cm3": 0.0
+        },
+        "heavy_initial": {
+          "He": {
+            "Ti_K": 300.0
+          }
+        },
+        "phase_grid": {
+          "energy_min_eV": 1e-05,
+          "energy_max_eV": "auto",
+          "energy_points": 32,
+          "angular_points": 4
+        },
+        "heavy_phase_grid": {
+          "energy_min_eV": 1e-06,
+          "energy_max_eV": "auto",
+          "energy_points": 16,
+          "angular_points": 4
+        },
+        "cells": 1,
+        "thickness_cm": 0.01,
+        "particle_boundary": {
+          "kind": "periodic"
+        },
+        "electric_field": {
+          "mode": "prescribed",
+          "Ez_V_cm": 0.0
+        },
+        "radiation": {
+          "scale": 0.0,
+          "continuum_points": 200,
+          "line_points": 41,
+          "Tn_K": 300.0,
+          "angular_points": 4,
+          "enabled": false,
+          "electron_scattering": false
+        },
+        "processes": {
+          "electron_bound_bound": false,
+          "electron_ionization": false,
+          "spontaneous": true,
+          "two_photon": false,
+          "photo_bound_bound": false,
+          "photo_bound_free": true,
+          "radiative_recombination": false,
+          "stimulated_recombination": false,
+          "disabled_ids": [
+            "A:RAD_HeI_2_3S__HeI_1_1S"
+          ]
+        },
+        "collisions": {
+          "ee_bgk": false,
+          "ii_bgk": false,
+          "ei_binary": false,
+          "neutral_elastic": false,
+          "coulomb_log": 10.0,
+          "maximum_phase_loss": 0.2,
+          "relative_azimuth_points": 2,
+          "scattering_azimuth_points": 2,
+          "neutral_low_energy": "constant"
+        },
+        "performance": {
+          "workers": 2,
+          "radiation_backend": "numpy",
+          "collision_cache_mb": 128
+        },
+        "solver": {
+          "t_end_s": 1e-08,
+          "max_step_s": 1e-09,
+          "min_step_s": 1e-16,
+          "samples": 3,
+          "max_steps": 100000
+        },
+        "diagnostics": {
+          "reaction_levels": [
+            "He_0:L004",
+            "He_0:L002",
+            "He+"
+          ],
+          "phase_history_csv": false,
+          "plots_on_finish": false,
+          "output_mode": "compact"
+        },
+        "progress": {
+          "mode": "text",
+          "interval_s": 0.5
+        },
+        "output_directory": "../outputs/output_gas_probe",
+        "chemistry": {
+          "enabled": false,
+          "rate_policy": "maxwellian_moments",
+          "disabled_ids": [
+            "LS05:Hplus_H:CX"
+          ],
+          "directory": "../data/reactions",
+          "components_directory": "../data/components",
+          "allow_estimated_rates": false
+        },
+        "gas": {
+          "mode": "densities",
+          "temperature_K": 300.0,
+          "components": [
+            {
+              "species": "He_0:L004",
+              "density_cm3": 100000000.0
+            }
+          ],
+          "distributions": {
+            "default": {
+              "kind": "maxwellian",
+              "Ti_K": 300.0,
+              "match_moments": true
+            }
+          }
+        },
+        "spatial_sources": [],
+        "probe": {
+          "mode": "off"
+        }
+      },
+      "ionization_threshold_eV": 3.6232842976247603,
+      "external_light_max": 0.0,
+      "initial_photoionization_frequency_s": 0.0,
+      "initial_electron_ionization_frequency_s": 0.0,
+      "electron_ionization_rate_coefficient_cm3_s": 0.0,
+      "ions_initial_cm3": 0.0,
+      "ions_final_cm3": 0.0,
+      "electrons_final_cm3": 0.0,
+      "ion_events_from_2_3P_cm3": {
+        "PI:He_0:L004": 0.0
+      },
+      "energy_residual_relative": 3.9443102372632885e-14,
+      "maximum_nuclear_residual": 3.934837877750397e-08,
+      "maximum_charge_residual": 0.0
+    },
+    {
+      "electrons_initial_cm3": 100000000.0,
+      "metastable_decay": false,
+      "configuration": {
+        "schema": "MixtureKineticSlab-2.1",
+        "atomic_data": {
+          "species": [
+            "He"
+          ],
+          "nmax": 9,
+          "prepared_directory": "../data/elements",
+          "offline": true,
+          "element_directory": "../data/elements",
+          "cache_directory": "../cache/atomic_sources"
+        },
+        "initial_cm3": {
+          "He_0:L004": 100000000.0,
+          "He+": 100000000.0
+        },
+        "level_selection": {
+          "mode": "all",
+          "relative_tolerance": 1e-06,
+          "forced_levels": [
+            "He_0:L002",
+            "He_0:L004"
+          ],
+          "missing_data": "report"
+        },
+        "electron_initial": {
+          "Te_eV": 0.8,
+          "kind": "maxwellian",
+          "match_moments": true,
+          "density_cm3": 100000000.0
+        },
+        "heavy_initial": {
+          "He": {
+            "Ti_K": 300.0
+          }
+        },
+        "phase_grid": {
+          "energy_min_eV": 1e-05,
+          "energy_max_eV": "auto",
+          "energy_points": 32,
+          "angular_points": 4
+        },
+        "heavy_phase_grid": {
+          "energy_min_eV": 1e-06,
+          "energy_max_eV": "auto",
+          "energy_points": 16,
+          "angular_points": 4
+        },
+        "cells": 1,
+        "thickness_cm": 0.01,
+        "particle_boundary": {
+          "kind": "periodic"
+        },
+        "electric_field": {
+          "mode": "prescribed",
+          "Ez_V_cm": 0.0
+        },
+        "radiation": {
+          "scale": 0.0,
+          "continuum_points": 200,
+          "line_points": 41,
+          "Tn_K": 300.0,
+          "angular_points": 4,
+          "enabled": false,
+          "electron_scattering": false
+        },
+        "processes": {
+          "electron_bound_bound": false,
+          "electron_ionization": true,
+          "spontaneous": true,
+          "two_photon": false,
+          "photo_bound_bound": false,
+          "photo_bound_free": true,
+          "radiative_recombination": false,
+          "stimulated_recombination": false,
+          "disabled_ids": [
+            "A:RAD_HeI_2_3S__HeI_1_1S"
+          ]
+        },
+        "collisions": {
+          "ee_bgk": false,
+          "ii_bgk": false,
+          "ei_binary": false,
+          "neutral_elastic": false,
+          "coulomb_log": 10.0,
+          "maximum_phase_loss": 0.2,
+          "relative_azimuth_points": 2,
+          "scattering_azimuth_points": 2,
+          "neutral_low_energy": "constant"
+        },
+        "performance": {
+          "workers": 2,
+          "radiation_backend": "numpy",
+          "collision_cache_mb": 128
+        },
+        "solver": {
+          "t_end_s": 1e-08,
+          "max_step_s": 1e-09,
+          "min_step_s": 1e-16,
+          "samples": 3,
+          "max_steps": 100000
+        },
+        "diagnostics": {
+          "reaction_levels": [
+            "He_0:L004",
+            "He_0:L002",
+            "He+"
+          ],
+          "phase_history_csv": false,
+          "plots_on_finish": false,
+          "output_mode": "compact"
+        },
+        "progress": {
+          "mode": "text",
+          "interval_s": 0.5
+        },
+        "output_directory": "../outputs/output_gas_probe",
+        "chemistry": {
+          "enabled": false,
+          "rate_policy": "maxwellian_moments",
+          "disabled_ids": [
+            "LS05:Hplus_H:CX"
+          ],
+          "directory": "../data/reactions",
+          "components_directory": "../data/components",
+          "allow_estimated_rates": false
+        },
+        "gas": {
+          "mode": "densities",
+          "temperature_K": 300.0,
+          "components": [
+            {
+              "species": "He_0:L004",
+              "density_cm3": 100000000.0
+            },
+            {
+              "species": "He+",
+              "density_cm3": 100000000.0
+            }
+          ],
+          "distributions": {
+            "default": {
+              "kind": "maxwellian",
+              "Ti_K": 300.0,
+              "match_moments": true
+            }
+          }
+        },
+        "spatial_sources": [],
+        "probe": {
+          "mode": "off"
+        }
+      },
+      "ionization_threshold_eV": 3.6232842976247603,
+      "external_light_max": 0.0,
+      "initial_photoionization_frequency_s": 0.0,
+      "initial_electron_ionization_frequency_s": 0.06829278474278952,
+      "electron_ionization_rate_coefficient_cm3_s": 6.829278474278952e-10,
+      "ions_initial_cm3": 99999999.99999996,
+      "ions_final_cm3": 100000000.06507799,
+      "electrons_final_cm3": 100000000.06507803,
+      "ion_events_from_2_3P_cm3": {
+        "ION:He_0:L004": 0.06492531220860237,
+        "PI:He_0:L004": 0.0
+      },
+      "energy_residual_relative": 3.419551227396315e-14,
+      "maximum_nuclear_residual": 7.706694304943085e-08,
+      "maximum_charge_residual": 2.9802322387695313e-10
+    },
+    {
+      "electrons_initial_cm3": 0.0,
+      "metastable_decay": true,
+      "configuration": {
+        "schema": "MixtureKineticSlab-2.1",
+        "atomic_data": {
+          "species": [
+            "He"
+          ],
+          "nmax": 9,
+          "prepared_directory": "../data/elements",
+          "offline": true,
+          "element_directory": "../data/elements",
+          "cache_directory": "../cache/atomic_sources"
+        },
+        "initial_cm3": {
+          "He_0:L004": 100000000.0
+        },
+        "level_selection": {
+          "mode": "all",
+          "relative_tolerance": 1e-06,
+          "forced_levels": [
+            "He_0:L002",
+            "He_0:L004"
+          ],
+          "missing_data": "report"
+        },
+        "electron_initial": {
+          "Te_eV": 0.8,
+          "kind": "maxwellian",
+          "match_moments": true,
+          "density_cm3": 0.0
+        },
+        "heavy_initial": {
+          "He": {
+            "Ti_K": 300.0
+          }
+        },
+        "phase_grid": {
+          "energy_min_eV": 1e-05,
+          "energy_max_eV": "auto",
+          "energy_points": 32,
+          "angular_points": 4
+        },
+        "heavy_phase_grid": {
+          "energy_min_eV": 1e-06,
+          "energy_max_eV": "auto",
+          "energy_points": 16,
+          "angular_points": 4
+        },
+        "cells": 1,
+        "thickness_cm": 0.01,
+        "particle_boundary": {
+          "kind": "periodic"
+        },
+        "electric_field": {
+          "mode": "prescribed",
+          "Ez_V_cm": 0.0
+        },
+        "radiation": {
+          "scale": 0.0,
+          "continuum_points": 200,
+          "line_points": 41,
+          "Tn_K": 300.0,
+          "angular_points": 4,
+          "enabled": false,
+          "electron_scattering": false
+        },
+        "processes": {
+          "electron_bound_bound": false,
+          "electron_ionization": false,
+          "spontaneous": true,
+          "two_photon": false,
+          "photo_bound_bound": false,
+          "photo_bound_free": true,
+          "radiative_recombination": false,
+          "stimulated_recombination": false
+        },
+        "collisions": {
+          "ee_bgk": false,
+          "ii_bgk": false,
+          "ei_binary": false,
+          "neutral_elastic": false,
+          "coulomb_log": 10.0,
+          "maximum_phase_loss": 0.2,
+          "relative_azimuth_points": 2,
+          "scattering_azimuth_points": 2,
+          "neutral_low_energy": "constant"
+        },
+        "performance": {
+          "workers": 2,
+          "radiation_backend": "numpy",
+          "collision_cache_mb": 128
+        },
+        "solver": {
+          "t_end_s": 1e-08,
+          "max_step_s": 1e-09,
+          "min_step_s": 1e-16,
+          "samples": 3,
+          "max_steps": 100000
+        },
+        "diagnostics": {
+          "reaction_levels": [
+            "He_0:L004",
+            "He_0:L002",
+            "He+"
+          ],
+          "phase_history_csv": false,
+          "plots_on_finish": false,
+          "output_mode": "compact"
+        },
+        "progress": {
+          "mode": "text",
+          "interval_s": 0.5
+        },
+        "output_directory": "../outputs/output_gas_probe",
+        "chemistry": {
+          "enabled": false,
+          "rate_policy": "maxwellian_moments",
+          "disabled_ids": [
+            "LS05:Hplus_H:CX"
+          ],
+          "directory": "../data/reactions",
+          "components_directory": "../data/components",
+          "allow_estimated_rates": false
+        },
+        "gas": {
+          "mode": "densities",
+          "temperature_K": 300.0,
+          "components": [
+            {
+              "species": "He_0:L004",
+              "density_cm3": 100000000.0
+            }
+          ],
+          "distributions": {
+            "default": {
+              "kind": "maxwellian",
+              "Ti_K": 300.0,
+              "match_moments": true
+            }
+          }
+        },
+        "spatial_sources": [],
+        "probe": {
+          "mode": "off"
+        }
+      },
+      "ionization_threshold_eV": 3.6232842976247603,
+      "external_light_max": 0.0,
+      "initial_photoionization_frequency_s": 0.0,
+      "initial_electron_ionization_frequency_s": 0.0,
+      "electron_ionization_rate_coefficient_cm3_s": 0.0,
+      "ions_initial_cm3": 0.0,
+      "ions_final_cm3": 1.5702739698683873e-18,
+      "electrons_final_cm3": 1.5702739698683873e-18,
+      "ion_events_from_2_3P_cm3": {
+        "PI:He_0:L004": 1.115487567950061e-18
+      },
+      "energy_residual_relative": 3.772199458109029e-14,
+      "maximum_nuclear_residual": 3.748573362827301e-08,
+      "maximum_charge_residual": 9.62964972193618e-37
+    }
+  ]
+}

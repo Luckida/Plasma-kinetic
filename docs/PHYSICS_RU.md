@@ -56,6 +56,10 @@ $$\nu_{ij}=\sum_{E,\mu}F_e(E,\mu)\,\sigma_{ij}(E)\,v_e(E),\qquad R_{ij}=n_i\nu_{
 
 Для однофотонных линий принят Voigt-профиль: тепловая ширина определяется фиксированной `radiation.Tn_K`, массой атома и частотой; естественная ширина — `A/(4π)`. Профиль на конечной сетке согласуется по числу фотонов и средней энергии. Текущие профили не перестраиваются по полной текущей функции скоростей каждого уровня: расчёт EEDF/IEDF сам по себе не доказывает доплеровскую точность линии в движущейся среде. Длины волн LS-центров нельзя отождествлять с каждой компонентой тонкой структуры.
 
+С 2.8.3 кинетический профиль ненулевой только в разрешённом окне `|ν−ν₀|≤300 max(σ_D, A/(4π))`, которое уже использовалось для построения локальной сетки линии. Нулевые защитные узлы исключают приписывание больших континуальных интервалов крайним точкам профиля. Прежнее вычисление Voigt на всей общей сетке давало недостоверные ионизирующие крылья даже у ИК-линии 1083 нм. Коэффициент 300 — **численный предел изолированной линии**, не экспериментальная граница и не результат подгонки атомных данных. Физика далёких крыльев и частичного частотного перераспределения не реализована; задачи, где она существенна, требуют другого оператора. Пассивный `Probe` сохраняет аналитический Voigt для диагностического пропускания; его далёкие крылья также не валидированы, и он не подаёт фотоны в кинетику. Подробности и контрольные числа — [гелий без внешнего света](DARK_HELIUM_2_8_3_RU.md).
+
+`radiation.enabled=false` выключает **внешнюю** граничную накачку. Внутреннее спонтанное, рекомбинационное и химическое излучение, а также отдельные `spatial_sources` управляются своими настройками. Поэтому PI может работать без внешней накачки, если есть собственные фотоны выше порога. Электронная ионизация `ION` вообще не требует фотонов.
+
 Двухфотонный распад применяется только к строкам данных с соответствующим признаком. Спектр берётся из `data/radiation/two_photon_shape.csv` для нейтрального He или `hydrogenic_two_photon.csv` для поддержанных гидрогеноподобных систем. Один акт даёт два фотона с суммарной энергией перехода. Произвольные запрещённые переходы этот флаг не создаёт.
 
 ## Поглощение в линии и стимулированное излучение
@@ -194,24 +198,26 @@ Emax=auto обеспечивает численное покрытие вход�
 
 | Процесс / роль | Файл и строка начала | Функция |
 |---|---|---|
-| Состав и начальные распределения | [src/mixture_kinetics.py:75](../src/mixture_kinetics.py#L75) | `MixtureSlab.__init__` |
-| Флаги процессов | [src/mixture_kinetics.py:222](../src/mixture_kinetics.py#L222) | `MixtureSlab.enabled` |
-| Атомные электронные и фотонные каналы | [src/mixture_kinetics.py:286](../src/mixture_kinetics.py#L286) | `MixtureSlab._atomic_channels` |
-| Стехиометрия общей сети | [src/mixture_kinetics.py:343](../src/mixture_kinetics.py#L343) | `MixtureSlab._network` |
-| Парная геометрия и рекомбинационные ядра | [src/mixture_kinetics.py:352](../src/mixture_kinetics.py#L352) | `MixtureSlab._pairs` |
-| Частоты атомных процессов и химические события | [src/mixture_kinetics.py:463](../src/mixture_kinetics.py#L463) | `MixtureSlab.rates` |
-| Недостающие атомные процессы и диапазоны | [src/mixture_kinetics.py:484](../src/mixture_kinetics.py#L484) | `MixtureSlab._check_data` |
-| Предписанное поле и экспериментальный Poisson | [src/mixture_kinetics.py:392](../src/mixture_kinetics.py#L392) | `MixtureSlab.field_E` |
-| Парные RR/SR скорости | [src/mixture_kinetics.py:402](../src/mixture_kinetics.py#L402) | `MixtureSlab.rr_values` |
-| Общее поле излучения | [src/mixture_kinetics.py:419](../src/mixture_kinetics.py#L419) | `MixtureSlab.field` |
-| Поглощение и излучение активного базиса | [src/mixture_kinetics.py:449](../src/mixture_kinetics.py#L449) | `MixtureSlab.optical_matrices` |
-| e–neutral, e–ion и BGK столкновения | [src/mixture_kinetics.py:541](../src/mixture_kinetics.py#L541) | `MixtureSlab._binary` |
-| Связанный шаг населённостей, EEDF и химии | [src/mixture_kinetics.py:579](../src/mixture_kinetics.py#L579) | `MixtureSlab._local` |
-| Ускорение и пространственный перенос | [src/mixture_kinetics.py:643](../src/mixture_kinetics.py#L643) | `MixtureSlab._transport` |
-| Расщепление и контроль шага | [src/mixture_kinetics.py:683](../src/mixture_kinetics.py#L683) | `MixtureSlab.solve` |
-| Полная энергия частиц и уровней | [src/mixture_kinetics.py:389](../src/mixture_kinetics.py#L389) | `MixtureSlab.total_energy` |
-| Балансы, события и сохранённый срез | [src/mixture_kinetics.py:667](../src/mixture_kinetics.py#L667) | `MixtureSlab.snapshot` |
-| Согласование спектрального профиля | [src/mixture_kinetics.py:46](../src/mixture_kinetics.py#L46) | `conservative_profile` |
+| Состав и начальные распределения | [src/mixture_kinetics.py:91](../src/mixture_kinetics.py#L91) | `MixtureSlab.__init__` |
+| Флаги процессов | [src/mixture_kinetics.py:238](../src/mixture_kinetics.py#L238) | `MixtureSlab.enabled` |
+| Атомные электронные и фотонные каналы | [src/mixture_kinetics.py:306](../src/mixture_kinetics.py#L306) | `MixtureSlab._atomic_channels` |
+| Общая фотонная сетка и внешняя накачка | [src/mixture_kinetics.py:245](../src/mixture_kinetics.py#L245) | `MixtureSlab._spectrum` |
+| Стехиометрия общей сети | [src/mixture_kinetics.py:363](../src/mixture_kinetics.py#L363) | `MixtureSlab._network` |
+| Парная геометрия и рекомбинационные ядра | [src/mixture_kinetics.py:372](../src/mixture_kinetics.py#L372) | `MixtureSlab._pairs` |
+| Частоты атомных процессов и химические события | [src/mixture_kinetics.py:483](../src/mixture_kinetics.py#L483) | `MixtureSlab.rates` |
+| Недостающие атомные процессы и диапазоны | [src/mixture_kinetics.py:504](../src/mixture_kinetics.py#L504) | `MixtureSlab._check_data` |
+| Предписанное поле и экспериментальный Poisson | [src/mixture_kinetics.py:412](../src/mixture_kinetics.py#L412) | `MixtureSlab.field_E` |
+| Парные RR/SR скорости | [src/mixture_kinetics.py:422](../src/mixture_kinetics.py#L422) | `MixtureSlab.rr_values` |
+| Общее поле излучения | [src/mixture_kinetics.py:439](../src/mixture_kinetics.py#L439) | `MixtureSlab.field` |
+| Поглощение и излучение активного базиса | [src/mixture_kinetics.py:469](../src/mixture_kinetics.py#L469) | `MixtureSlab.optical_matrices` |
+| e–neutral, e–ion и BGK столкновения | [src/mixture_kinetics.py:561](../src/mixture_kinetics.py#L561) | `MixtureSlab._binary` |
+| Связанный шаг населённостей, EEDF и химии | [src/mixture_kinetics.py:599](../src/mixture_kinetics.py#L599) | `MixtureSlab._local` |
+| Ускорение и пространственный перенос | [src/mixture_kinetics.py:663](../src/mixture_kinetics.py#L663) | `MixtureSlab._transport` |
+| Расщепление и контроль шага | [src/mixture_kinetics.py:703](../src/mixture_kinetics.py#L703) | `MixtureSlab.solve` |
+| Полная энергия частиц и уровней | [src/mixture_kinetics.py:409](../src/mixture_kinetics.py#L409) | `MixtureSlab.total_energy` |
+| Балансы, события и сохранённый срез | [src/mixture_kinetics.py:687](../src/mixture_kinetics.py#L687) | `MixtureSlab.snapshot` |
+| Согласование спектрального профиля | [src/mixture_kinetics.py:62](../src/mixture_kinetics.py#L62) | `conservative_profile` |
+| Конечное окно Voigt-профиля кинетических линий | [src/mixture_kinetics.py:47](../src/mixture_kinetics.py#L47) | `isolated_line_profile` |
 | Сумма σv по EEDF | [src/kinetic_kernels.py:102](../src/kinetic_kernels.py#L102) | `impact_rates` |
 | Электронные потери и продукты неупругих событий | [src/kinetic_kernels.py:112](../src/kinetic_kernels.py#L112) | `impact_events` |
 | Относительные электрон–тяжёлые скорости | [src/kinetic_kernels.py:143](../src/kinetic_kernels.py#L143) | `pair_geometry` |

@@ -1,0 +1,53 @@
+{
+  "schema": "ChemicalComponents-1",
+  "components": [
+    {
+      "id": "H-",
+      "label": "H⁻ (effective ground)",
+      "charge": -1,
+      "nuclei": {
+        "H": 1
+      },
+      "energy_anchors": {},
+      "energy_offset_eV": -0.754195,
+      "source": "NIST Chemistry WebBook, electron affinity of H"
+    },
+    {
+      "id": "H2",
+      "label": "H₂ X¹Σg⁺ (effective ground)",
+      "charge": 0,
+      "nuclei": {
+        "H": 2
+      },
+      "energy_anchors": {},
+      "energy_offset_eV": -4.478069,
+      "source": "NIST/ATcT H2 ground dissociation energy"
+    },
+    {
+      "id": "H2+",
+      "label": "H₂⁺ X²Σg⁺ (effective ground)",
+      "charge": 1,
+      "nuclei": {
+        "H": 2
+      },
+      "energy_anchors": {
+        "H_1": 1
+      },
+      "energy_offset_eV": -2.6507,
+      "source": "NIST H2+ dissociation to H + H+; effective rounded D0"
+    },
+    {
+      "id": "H3+",
+      "label": "H₃⁺ (effective ground)",
+      "charge": 1,
+      "nuclei": {
+        "H": 3
+      },
+      "energy_anchors": {
+        "H_1": 1
+      },
+      "energy_offset_eV": -8.855069,
+      "source": "ATcT/NIST proton affinity H2; effective rounded value"
+    }
+  ]
+}

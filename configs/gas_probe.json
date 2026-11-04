@@ -1,0 +1,163 @@
+{
+  "schema": "MixtureKineticSlab-2.1",
+  "atomic_data": {
+    "species": [
+      "H",
+      "He"
+    ],
+    "nmax": 9,
+    "prepared_directory": "../data/elements",
+    "offline": true,
+    "element_directory": "../data/elements",
+    "cache_directory": "../cache/atomic_sources"
+  },
+  "initial_cm3": {
+    "H": 1000000000.0,
+    "H+": 10000000.0,
+    "He": 9000000000.0,
+    "HeI_2_3S": 1000000.0,
+    "He+": 100000000.0
+  },
+  "level_selection": {
+    "mode": "auto",
+    "relative_tolerance": 1e-06,
+    "forced_levels": [
+      "He_0:L002",
+      "He_0:L004"
+    ],
+    "missing_data": "report"
+  },
+  "electron_initial": {
+    "Te_eV": 0.8,
+    "kind": "maxwellian",
+    "match_moments": true
+  },
+  "heavy_initial": {
+    "H": {
+      "Ti_K": 300.0
+    },
+    "He": {
+      "Ti_K": 300.0
+    }
+  },
+  "phase_grid": {
+    "energy_min_eV": 1e-05,
+    "energy_max_eV": "auto",
+    "energy_points": 32,
+    "angular_points": 4
+  },
+  "heavy_phase_grid": {
+    "energy_min_eV": 1e-06,
+    "energy_max_eV": "auto",
+    "energy_points": 16,
+    "angular_points": 4
+  },
+  "cells": 2,
+  "thickness_cm": 0.01,
+  "particle_boundary": {
+    "kind": "periodic"
+  },
+  "electric_field": {
+    "mode": "prescribed",
+    "Ez_V_cm": 0.0
+  },
+  "radiation": {
+    "scale": 0.0,
+    "continuum_points": 200,
+    "line_points": 41,
+    "Tn_K": 300.0,
+    "angular_points": 4,
+    "enabled": false,
+    "electron_scattering": false
+  },
+  "processes": {},
+  "collisions": {
+    "ee_bgk": false,
+    "ii_bgk": false,
+    "ei_binary": false,
+    "neutral_elastic": false,
+    "coulomb_log": 10.0,
+    "maximum_phase_loss": 0.2,
+    "relative_azimuth_points": 2,
+    "scattering_azimuth_points": 2,
+    "neutral_low_energy": "constant"
+  },
+  "performance": {
+    "workers": 2,
+    "radiation_backend": "numpy",
+    "collision_cache_mb": 128
+  },
+  "solver": {
+    "t_end_s": 2e-08,
+    "max_step_s": 1e-09,
+    "min_step_s": 1e-16,
+    "samples": 5,
+    "max_steps": 100000
+  },
+  "diagnostics": {
+    "reaction_levels": [
+      "He_0:L002",
+      "He_0:L004",
+      "H",
+      "H+"
+    ],
+    "phase_history_csv": false,
+    "plots_on_finish": false,
+    "output_mode": "compact"
+  },
+  "progress": {
+    "mode": "text",
+    "interval_s": 0.5
+  },
+  "output_directory": "../outputs/output_gas_probe",
+  "chemistry": {
+    "enabled": true,
+    "rate_policy": "maxwellian_moments",
+    "disabled_ids": [
+      "LS05:Hplus_H:CX"
+    ],
+    "directory": "../data/reactions",
+    "components_directory": "../data/components",
+    "allow_estimated_rates": false
+  },
+  "gas": {
+    "mode": "densities",
+    "temperature_K": 300.0,
+    "components": [
+      {
+        "species": "H",
+        "density_cm3": 1000000000.0
+      },
+      {
+        "species": "H+",
+        "density_cm3": 10000000.0
+      },
+      {
+        "species": "He",
+        "density_cm3": 9000000000.0
+      },
+      {
+        "species": "HeI_2_3S",
+        "density_cm3": 1000000.0
+      },
+      {
+        "species": "He+",
+        "density_cm3": 100000000.0
+      }
+    ],
+    "distributions": {
+      "default": {
+        "kind": "maxwellian",
+        "Ti_K": 300.0,
+        "match_moments": true
+      }
+    }
+  },
+  "spatial_sources": [],
+  "probe": {
+    "mode": "flat",
+    "minimum_nm": 1082.0,
+    "maximum_nm": 1084.0,
+    "points": 501
+  }
+}

@@ -1,0 +1,4 @@
+﻿id;reason;source
+UMIST22:502;Radiative charge transfer: photons cannot be replaced by heavy-particle heating. Requires a continuum radiation operator.;Zygelman et al. 1998, 10.1086/306473
+UMIST22:3202;"H2+(v=0)+He ->HeH++H is endothermic; the constant rate presumes excited molecular distribution. Not applied to effective ground carriers.";"Roberge & Dalgarno 1982 IIc; UMIST Rate22"
+He_excited_Hplus_state_branches;"Published total CT rates sum final H(nl). Ground H is an explicitly estimated product closure. No inverse collision is derived from that total; need state-to-state sigma(E).";"doi:10.1088/1361-6455/aab425; arxiv:1801.06821"

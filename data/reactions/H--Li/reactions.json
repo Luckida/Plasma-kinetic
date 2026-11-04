@@ -1,0 +1,61 @@
+{
+  "schema": "ParticleReactions-1",
+  "reviewed": true,
+  "elements": [
+    "H",
+    "Li"
+  ],
+  "reactions": [
+    {
+      "id": "GP98:Li_Hplus:CT",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li": 1,
+        "H+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "H": 1
+      },
+      "rate_id": "GP98:Li_Hplus:CT",
+      "coefficient_convention": "event_rate",
+      "radiative": false,
+      "source": "Galli & Palla 1998, A&A 335 403, Table 4 Li7/Li8; https://arxiv.org/abs/astro-ph/9803315; primary processes Kimura et al. 1994 and Stancil & Zygelman 1996",
+      "model_note": "k=alpha*T^beta*exp(-T/gamma), T in K. 100..20000 K is an implementation guard, not a verified uncertainty interval. Ground atomic carriers. RCT photon defect closure if radiative."
+    },
+    {
+      "id": "GP98:Li_Hplus:RCT",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li": 1,
+        "H+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "H": 1
+      },
+      "rate_id": "GP98:Li_Hplus:RCT",
+      "coefficient_convention": "event_rate",
+      "radiative": true,
+      "source": "Galli & Palla 1998, A&A 335 403, Table 4 Li7/Li8; https://arxiv.org/abs/astro-ph/9803315; primary processes Kimura et al. 1994 and Stancil & Zygelman 1996",
+      "model_note": "k=alpha*T^beta*exp(-T/gamma), T in K. 100..20000 K is an implementation guard, not a verified uncertainty interval. Ground atomic carriers. RCT photon defect closure if radiative."
+    },
+    {
+      "id": "GP98:H_Liplus:inverse_CT",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "H": 1
+      },
+      "products": {
+        "Li": 1,
+        "H+": 1
+      },
+      "rate_id": "GP98:Li_Hplus:CT",
+      "thermal_inverse": true,
+      "coefficient_convention": "event_rate",
+      "source": "Galli & Palla 1998, A&A 335 403, Table 4 Li7/Li8; https://arxiv.org/abs/astro-ph/9803315; primary processes Kimura et al. 1994 and Stancil & Zygelman 1996; thermal detailed balance",
+      "model_note": "Inverse of nonradiative CT only; radiative CT is not inverted as a collision without a photon."
+    }
+  ]
+}

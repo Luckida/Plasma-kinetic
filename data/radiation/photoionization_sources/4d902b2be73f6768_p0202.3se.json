@@ -1,0 +1,8 @@
+{
+  "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.3se",
+  "sha256_bytes": "bedf6317626b1af91185f46908dd00ed47034c00c8c4d6cbde2ed794cffda1ba",
+  "sha256_science": "bedf6317626b1af91185f46908dd00ed47034c00c8c4d6cbde2ed794cffda1ba",
+  "source_version": "pinned",
+  "reference": "Hummer & Storey 1998; Cloudy data, license in radiation_data",
+  "retrieved_utc": "2026-10-31T16:53:31.715896+00:00"
+}

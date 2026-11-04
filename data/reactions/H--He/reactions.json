@@ -1,0 +1,346 @@
+{
+  "schema": "ParticleReactions-1",
+  "reviewed": true,
+  "reactions": [
+    {
+      "id": "UMIST22:469",
+      "reactants": {
+        "H2": 1,
+        "He+": 1
+      },
+      "products": {
+        "He": 1,
+        "H2+": 1
+      },
+      "kind": "charge_exchange",
+      "rate_id": "UMIST22:469",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 469; 10.1063/1.456748",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:1711",
+      "reactants": {
+        "HeH+": 1,
+        "e": 1
+      },
+      "products": {
+        "He": 1,
+        "H": 1
+      },
+      "kind": "dissociative_recombination",
+      "rate_id": "UMIST22:1711",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 1711; 10.1016/0370-1573(90)90159-Y",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved.",
+      "alternative_group": "HeH_recombination",
+      "alternative": "UMIST22"
+    },
+    {
+      "id": "UMIST22:3272",
+      "reactants": {
+        "H2": 1,
+        "He+": 1
+      },
+      "products": {
+        "H+": 1,
+        "H": 1,
+        "He": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "UMIST22:3272",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 3272; 10.1063/1.456748",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:3273",
+      "reactants": {
+        "H2": 1,
+        "HeH+": 1
+      },
+      "products": {
+        "He": 1,
+        "H3+": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "UMIST22:3273",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 3273; 10.1063/1.431067",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:3682",
+      "reactants": {
+        "H": 1,
+        "HeH+": 1
+      },
+      "products": {
+        "He": 1,
+        "H2+": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "UMIST22:3682",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 3682; 10.1063/1.437823",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved.",
+      "alternative_group": "HeH_H_exchange",
+      "alternative": "UMIST22"
+    },
+    {
+      "id": "UMIST22:6364",
+      "reactants": {
+        "H-": 1,
+        "He+": 1
+      },
+      "products": {
+        "H": 1,
+        "He": 1
+      },
+      "kind": "mutual_neutralization",
+      "rate_id": "UMIST22:6364",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 6364; 10.1086/590468",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "RD82:He3S_H:PI",
+      "reactants": {
+        "He(2^3S)": 1,
+        "H": 1
+      },
+      "products": {
+        "He": 1,
+        "H+": 1,
+        "e": 1
+      },
+      "kind": "penning",
+      "rate_id": "RD82:He3S_H:PI",
+      "coefficient_convention": "event_rate",
+      "source": "Roberge & Dalgarno 1982, ApJ 255, 489, section IIb; https://doi.org/10.1086/159849",
+      "model_note": "Total k≈5e-10. AI fraction 0.3 at 300 K, 0.02 at 4500 K; interpolation b_AI=90/T is a model, not a published fit.",
+      "alternative_group": "He_H_chemiionization",
+      "alternative": "RD82"
+    },
+    {
+      "id": "RD82:He3S_H:AI",
+      "reactants": {
+        "He(2^3S)": 1,
+        "H": 1
+      },
+      "products": {
+        "HeH+": 1,
+        "e": 1
+      },
+      "kind": "associative_ionization",
+      "rate_id": "RD82:He3S_H:AI",
+      "coefficient_convention": "event_rate",
+      "source": "Roberge & Dalgarno 1982, ApJ 255, 489, section IIb; https://doi.org/10.1086/159849",
+      "model_note": "Total k≈5e-10. AI fraction 0.3 at 300 K, 0.02 at 4500 K; interpolation b_AI=90/T is a model, not a published fit.",
+      "alternative_group": "He_H_chemiionization",
+      "alternative": "RD82"
+    },
+    {
+      "id": "GM25:He3S_H:PI",
+      "reactants": {
+        "He(2^3S)": 1,
+        "H": 1
+      },
+      "products": {
+        "He": 1,
+        "H+": 1,
+        "e": 1
+      },
+      "kind": "penning",
+      "rate_id": "GM25:He3S_H:PI",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "alternative_group": "He_H_chemiionization",
+      "alternative": "GM25",
+      "model_note": "Total thermal rates from Table A5, with the paper's constant 90:10 Penning:association partition. Scalar unpolarized states; molecular rovibrational product populations unresolved."
+    },
+    {
+      "id": "GM25:He3S_H:AI",
+      "reactants": {
+        "He(2^3S)": 1,
+        "H": 1
+      },
+      "products": {
+        "HeH+": 1,
+        "e": 1
+      },
+      "kind": "associative_ionization",
+      "rate_id": "GM25:He3S_H:AI",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "alternative_group": "He_H_chemiionization",
+      "alternative": "GM25",
+      "model_note": "Total thermal rates from Table A5, with the paper's constant 90:10 Penning:association partition. Scalar unpolarized states; molecular rovibrational product populations unresolved."
+    },
+    {
+      "id": "GM25:He1S_H:PI",
+      "reactants": {
+        "He(2^1S)": 1,
+        "H": 1
+      },
+      "products": {
+        "He": 1,
+        "H+": 1,
+        "e": 1
+      },
+      "kind": "penning",
+      "rate_id": "GM25:He1S_H:PI",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "alternative_group": "He_H_chemiionization",
+      "alternative": "GM25",
+      "model_note": "Total thermal rates from Table A5, with the paper's constant 90:10 Penning:association partition. Scalar unpolarized states; molecular rovibrational product populations unresolved."
+    },
+    {
+      "id": "GM25:He1S_H:AI",
+      "reactants": {
+        "He(2^1S)": 1,
+        "H": 1
+      },
+      "products": {
+        "HeH+": 1,
+        "e": 1
+      },
+      "kind": "associative_ionization",
+      "rate_id": "GM25:He1S_H:AI",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "alternative_group": "He_H_chemiionization",
+      "alternative": "GM25",
+      "model_note": "Total thermal rates from Table A5, with the paper's constant 90:10 Penning:association partition. Scalar unpolarized states; molecular rovibrational product populations unresolved."
+    },
+    {
+      "id": "GM25:He3S_Hplus:CT",
+      "reactants": {
+        "He(2^3S)": 1,
+        "H+": 1
+      },
+      "products": {
+        "He+": 1,
+        "H": 1
+      },
+      "kind": "charge_exchange",
+      "rate_id": "GM25:He3S_Hplus:CT",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "model_note": "Loreau et al. 2018 via Garcia Munoz Table A7. The source extrapolated below 3000 K (private communication); no published sigma(E) is implied. IMPORTANT: published k sums final H(nl); assignment to ground H is an effective-carrier product closure, not state-resolved kinetics. Do not infer a reverse state-resolved rate from this total.",
+      "estimated": true
+    },
+    {
+      "id": "GM25:He1S_Hplus:CT",
+      "reactants": {
+        "He(2^1S)": 1,
+        "H+": 1
+      },
+      "products": {
+        "He+": 1,
+        "H": 1
+      },
+      "kind": "charge_exchange",
+      "rate_id": "GM25:He1S_Hplus:CT",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "model_note": "Loreau et al. 2018 via Garcia Munoz Table A7. The source extrapolated below 3000 K (private communication); no published sigma(E) is implied. IMPORTANT: published k sums final H(nl); assignment to ground H is an effective-carrier product closure, not state-resolved kinetics. Do not infer a reverse state-resolved rate from this total.",
+      "estimated": true
+    },
+    {
+      "id": "GM25:Heplus_H:RCT",
+      "reactants": {
+        "He+": 1,
+        "H": 1
+      },
+      "products": {
+        "He": 1,
+        "H+": 1
+      },
+      "kind": "charge_exchange",
+      "rate_id": "GM25:Heplus_H:RCT",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "radiative": true,
+      "model_note": "Table A7, Courtney et al. 2021: assumed T-independent. Low-energy radiative CT. Photon carries the internal defect; continuum and recoil not resolved."
+    },
+    {
+      "id": "GM25:HeH_e:DR",
+      "reactants": {
+        "HeH+": 1,
+        "e": 1
+      },
+      "products": {
+        "He": 1,
+        "H": 1
+      },
+      "kind": "dissociative_recombination",
+      "rate_id": "GM25:HeH_e:DR",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "alternative_group": "HeH_recombination",
+      "alternative": "GM25",
+      "model_note": "Table A6; electron temperature is the relative collision-temperature moment. Ground product carrier, no resolved v,J."
+    },
+    {
+      "id": "GM25:HeH_H:exchange",
+      "reactants": {
+        "HeH+": 1,
+        "H": 1
+      },
+      "products": {
+        "He": 1,
+        "H2+": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "GM25:HeH_H:exchange",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "alternative_group": "HeH_H_exchange",
+      "alternative": "GM25",
+      "model_note": "Table A6, De Fazio 2014. Ground molecular carriers, not a resolved rotational-vibrational calculation."
+    },
+    {
+      "id": "GM25:H2plus_He:exchange",
+      "reactants": {
+        "H2+": 1,
+        "He": 1
+      },
+      "products": {
+        "HeH+": 1,
+        "H": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "GM25:H2plus_He:exchange",
+      "coefficient_convention": "event_rate",
+      "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+      "model_note": "Table A6, Black 1978; finite thermal interval, energy threshold enforced pair by pair."
+    }
+  ],
+  "elements": [
+    "H",
+    "He"
+  ],
+  "selectors": {
+    "He(2^3S)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 0
+    },
+    "He(2^1S)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 1,
+      "L": 0
+    }
+  },
+  "default_datasets": {
+    "He_H_chemiionization": "RD82",
+    "HeH_recombination": "UMIST22",
+    "HeH_H_exchange": "UMIST22"
+  }
+}

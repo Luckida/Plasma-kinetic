@@ -1,0 +1,16 @@
+﻿id;species;configuration;n;multiplicity;L;g;energy_cm1;energy_reference;mass_u;source_index;label;source
+He_1:L001;He II;1s(2S);1;2;0;2;0.0;ground_of_this_ion;4.002602;1;He II 1s(2S) 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L002;He II;2s(2S);2;2;0;2;329212.0;ground_of_this_ion;4.002602;2;He II 2s(2S) 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L003;He II;2p(2P);2;2;1;6;329212.0;ground_of_this_ion;4.002602;3;He II 2p(2P) 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L004;He II;3s(2S);3;2;0;2;390177.0;ground_of_this_ion;4.002602;4;He II 3s(2S) 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L005;He II;3p(2P);3;2;1;6;390177.0;ground_of_this_ion;4.002602;5;He II 3p(2P) 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L006;He II;3d(2D);3;2;2;10;390177.0;ground_of_this_ion;4.002602;6;He II 3d(2D) 2D;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L007;He II;4s(2S);4;2;0;2;411515.0;ground_of_this_ion;4.002602;7;He II 4s(2S) 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L008;He II;4p(2P);4;2;1;6;411515.0;ground_of_this_ion;4.002602;8;He II 4p(2P) 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L009;He II;4d(2D);4;2;2;10;411515.0;ground_of_this_ion;4.002602;9;He II 4d(2D) 2D;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L010;He II;4f(2F);4;2;3;14;411515.0;ground_of_this_ion;4.002602;10;He II 4f(2F) 2F;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L011;He II;5s(2S);5;2;0;2;421391.0;ground_of_this_ion;4.002602;11;He II 5s(2S) 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L012;He II;5p(2P);5;2;1;6;421391.0;ground_of_this_ion;4.002602;12;He II 5p(2P) 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L013;He II;5d(2D);5;2;2;10;421391.0;ground_of_this_ion;4.002602;13;He II 5d(2D) 2D;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L014;He II;5f(2F);5;2;3;14;421391.0;ground_of_this_ion;4.002602;14;He II 5f(2F) 2F;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat
+He_1:L015;He II;5g(2G);5;2;4;18;421391.0;ground_of_this_ion;4.002602;15;He II 5g(2G) 2G;https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat

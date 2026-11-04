@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "file": "p0202.1se",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.1se",
+      "sha256": "d75da1fb77b8af6a28833c9416387d6135abe3b5178a7fb620d5c210f34af479"
+    },
+    {
+      "file": "p0202.1po",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.1po",
+      "sha256": "7f33f3b426d45a6e234d62acae8d96c522fef73169673a6fbb977dae975c700b"
+    },
+    {
+      "file": "p0202.1de",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.1de",
+      "sha256": "094d62fa4a4c4a419454121bbbc6307bbb2d2412b440dc29dc1797ba1c8edd5a"
+    },
+    {
+      "file": "p0202.3se",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.3se",
+      "sha256": "bedf6317626b1af91185f46908dd00ed47034c00c8c4d6cbde2ed794cffda1ba"
+    },
+    {
+      "file": "p0202.3po",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.3po",
+      "sha256": "db628ba58ff56d4eddd50370105d1b408015403637340aa875f56af9e7312eba"
+    },
+    {
+      "file": "p0202.3de",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/data/sh98_he1/pi/p0202.3de",
+      "sha256": "2afd78a55d1ecf57edab406870d9a981f6ca12d7d90cfddc675a5fa5ce8e976f"
+    },
+    {
+      "file": "atmdat_2photon.cpp",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/source/atmdat_2photon.cpp",
+      "sha256": "219ac19b839e8af7a2474cd86e6282963d904b51f97db2f35590b888e6c689ab"
+    },
+    {
+      "file": "Cloudy_license.txt",
+      "url": "https://gitlab.nublado.org/cloudy/cloudy/-/raw/master/license.txt",
+      "sha256": "c275df0667c7779082b36726db92a7f77a06afe6b58be8b343fc26e076c3743f"
+    }
+  ],
+  "photoionization": "Hummer & Storey 1998, MNRAS 297, 1073; raw tables distributed with Cloudy",
+  "energy_alignment": "Additive threshold shift; photoelectron energy is preserved",
+  "cross_section_unit": "cm^2; original Mb multiplied by 1e-18",
+  "two_photon": "W. Johnson 2002 table distributed in Cloudy; symmetric shape, normalized at runtime",
+  "note": "Processed numerical tables; not Cloudy source code. No new atomic calculation claimed.",
+  "schema": "RadiationSources-2",
+  "verner": {
+    "url": "https://www.pa.uky.edu/~verner/dima/photo/photo.dat",
+    "sha256": "a53e73b0af4cc6b801aef67b84bd964e3ed8c9c4992f214e4a69dc7e4443f389",
+    "reference": "Verner et al. 1996, ApJ 465,487; ground states only"
+  }
+}

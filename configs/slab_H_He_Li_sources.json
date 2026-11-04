@@ -1,0 +1,195 @@
+{
+  "schema": "MixtureKineticSlab-2.1",
+  "atomic_data": {
+    "species": [
+      "H",
+      "He",
+      "Li",
+      "Li II"
+    ],
+    "nmax": 9,
+    "prepared_directory": "../data/elements",
+    "offline": true,
+    "element_directory": "../data/elements",
+    "cache_directory": "../cache/atomic_sources"
+  },
+  "initial_cm3": {
+    "H": 1000000000.0,
+    "H+": 10000000.0,
+    "He": 9000000000.0,
+    "He_0:L002": 1000000.0,
+    "He II": 100000000.0,
+    "Li": 10000000.0,
+    "Li II": 100000.0
+  },
+  "level_selection": {
+    "mode": "all",
+    "relative_tolerance": 1e-06,
+    "forced_levels": [
+      "He_0:L002",
+      "He_0:L004"
+    ],
+    "missing_data": "report"
+  },
+  "electron_initial": {
+    "Te_eV": 0.8,
+    "hot_fraction": 0.0,
+    "hot_Te_eV": 3.0,
+    "angular_bias": 0.3
+  },
+  "heavy_initial": {
+    "H": {
+      "Ti_K": 650.0,
+      "uz_cm_s": 0.0
+    },
+    "He": {
+      "Ti_K": 650.0,
+      "uz_cm_s": 0.0
+    },
+    "Li": {
+      "Ti_K": 650.0,
+      "uz_cm_s": 0.0
+    }
+  },
+  "phase_grid": {
+    "energy_min_eV": 1e-05,
+    "energy_max_eV": "auto",
+    "energy_points": 32,
+    "angular_points": 4
+  },
+  "heavy_phase_grid": {
+    "energy_min_eV": 1e-06,
+    "energy_max_eV": 200.0,
+    "energy_points": 32,
+    "angular_points": 4
+  },
+  "cells": 4,
+  "thickness_cm": 1.0,
+  "particle_boundary": {
+    "kind": "walls",
+    "walls": {
+      "left": {
+        "quenching_probability": 1.0,
+        "neutralization_probability": 1.0,
+        "sticking_probability": 0.0,
+        "electron_absorption_probability": 0.5
+      },
+      "right": {
+        "quenching_probability": 1.0,
+        "neutralization_probability": 1.0,
+        "sticking_probability": 0.0,
+        "electron_absorption_probability": 0.5
+      }
+    }
+  },
+  "electric_field": {
+    "mode": "prescribed",
+    "Ez_V_cm": 0.0
+  },
+  "radiation": {
+    "spectrum_file": "../data/radiation/point_spectrum.csv",
+    "scale": 0.0,
+    "continuum_points": 200,
+    "line_points": 41,
+    "Tn_K": 300.0,
+    "angular_points": 4
+  },
+  "processes": {},
+  "collisions": {
+    "ee_bgk": true,
+    "ii_bgk": true,
+    "ei_binary": true,
+    "neutral_elastic": true,
+    "coulomb_log": 10.0,
+    "maximum_phase_loss": 0.2,
+    "relative_azimuth_points": 2,
+    "scattering_azimuth_points": 2,
+    "neutral_low_energy": "constant"
+  },
+  "performance": {
+    "workers": 4,
+    "radiation_backend": "numba",
+    "collision_cache_mb": 128
+  },
+  "solver": {
+    "t_end_s": 2e-09,
+    "max_step_s": 2e-10,
+    "min_step_s": 1e-16,
+    "samples": 5,
+    "max_steps": 100000
+  },
+  "diagnostics": {
+    "reaction_levels": [
+      "He_0:L002",
+      "He_0:L004",
+      "H",
+      "H+",
+      "Li",
+      "Li II"
+    ],
+    "phase_history_csv": false,
+    "output_mode": "compact",
+    "plots_on_finish": false
+  },
+  "progress": {
+    "mode": "text",
+    "interval_s": 0.5
+  },
+  "output_directory": "../outputs/output_slab_H_He_Li_sources",
+  "chemistry": {
+    "enabled": true,
+    "rate_policy": "maxwellian_moments",
+    "disabled_ids": [
+      "LS05:Hplus_H:CX"
+    ],
+    "directory": "../data/reactions",
+    "components_directory": "../data/components",
+    "allow_estimated_rates": true,
+    "datasets": {
+      "He_H_chemiionization": "GM25",
+      "HeH_recombination": "GM25",
+      "HeH_H_exchange": "GM25"
+    }
+  },
+  "spatial_sources": [
+    {
+      "id": "protons",
+      "mode": "ions",
+      "species": "H+",
+      "position_cm": 0.15,
+      "width_cm": 0.0,
+      "start_s": 0.0,
+      "stop_s": 1e-09,
+      "rate_cm2_s": 1e+17,
+      "distribution": {
+        "Ti_K": 650.0,
+        "uz_cm_s": 3000000.0
+      }
+    },
+    {
+      "id": "electrons",
+      "mode": "electrons",
+      "position_cm": 0.35,
+      "width_cm": 0.0,
+      "start_s": 2e-10,
+      "stop_s": 1.4e-09,
+      "rate_cm2_s": 1e+17,
+      "distribution": {
+        "Te_eV": 1.5,
+        "angular_bias": 0.5
+      }
+    },
+    {
+      "id": "light",
+      "mode": "radiation",
+      "position_cm": 0.7,
+      "width_cm": 0.0,
+      "start_s": 0.0,
+      "stop_s": 1.6e-09,
+      "spectrum_file": "../data/radiation/point_spectrum.csv",
+      "scale": 0.1,
+      "direction": "both",
+      "mu": 1.0
+    }
+  ]
+}

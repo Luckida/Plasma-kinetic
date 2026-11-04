@@ -1,0 +1,76 @@
+{
+  "schema": "ElementData-1",
+  "element": "He",
+  "ground_stages": [
+    {
+      "charge": 0,
+      "g": 1,
+      "n": 1,
+      "multiplicity": 1,
+      "L": 0,
+      "configuration": "1s2",
+      "ionization_eV": 24.59
+    },
+    {
+      "charge": 1,
+      "g": 2,
+      "n": 1,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "1s",
+      "ionization_eV": 54.42
+    },
+    {
+      "charge": 2,
+      "g": 1,
+      "configuration": "bare nucleus"
+    }
+  ],
+  "sources": {
+    "adas_he0": {
+      "url": "https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat",
+      "sha256": "0db91cebdfc501567c96f8bada6107c6b674597f6676c7c9eeed30099bc3a409",
+      "hash_mode": "adas_science",
+      "format": "adf04_ls3",
+      "reference": "Paton–Bryans 2004, OPEN-ADAS PB04"
+    },
+    "ccc_he0": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/He/I/ELECTRON_IMPACT/e-He_sig.zip",
+      "sha256": "d68ba39d81c8252043e12f92155c1a9ab73117b55abfd971b98d6a65c6993a85",
+      "hash_mode": "bytes",
+      "format": "ccc_zip",
+      "reference": "Fursa & Bray 1995 PRA 52 1279; CCC April 2026"
+    },
+    "adas_he1": {
+      "url": "https://open.adas.ac.uk/download/adf04/hlike/hlike_cpb03%5D%5Bhe1.dat",
+      "sha256": "12d99621fe222acdc05f8cb08f95dfcaf0e27e9ab2cc4272ae82c02479ae433e",
+      "hash_mode": "adas_science",
+      "format": "adf04_ls3",
+      "reference": "OPEN-ADAS CPB03, Connor Ballance 28 June 2003; LS n<=5"
+    },
+    "ccc_he1": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/He/II/ELECTRON_IMPACT/e-HeII_XSEC_LS.zip",
+      "sha256": "e32f7d22a3dc54e7981e93369bb98ddd38109a784cff608e59e9657b3a3558db",
+      "hash_mode": "bytes",
+      "format": "ccc_zip",
+      "reference": "Bray & Fursa 1993; CCC He II May 2026"
+    }
+  },
+  "species": {
+    "He_0": {
+      "mass_u": 4.002602,
+      "adf04": "adas_he0",
+      "electron_cross_sections": "ccc_he0",
+      "ccc_labels": "helium",
+      "runtime_adapter": "helium_ls"
+    },
+    "He_1": {
+      "mass_u": 4.002602,
+      "adf04": "adas_he1",
+      "electron_cross_sections": "ccc_he1",
+      "ccc_labels": "hydrogenic",
+      "runtime_adapter": "mixture_ls"
+    }
+  },
+  "ground_stages_note": "Inherited v1.8 ground-stage data. Rounded Verner thresholds are used where no imported ADF04 parent threshold is available; not a complete excited-ion model."
+}

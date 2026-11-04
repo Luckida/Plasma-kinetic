@@ -1,0 +1,16 @@
+﻿id;species;configuration;n;multiplicity;L;g;energy_cm1;energy_reference;mass_u;source_index;label;source
+H_0:L001;H I;1S1;1;2;0;2;0.0;ground_of_this_ion;1.008;1;H I 1S1 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L002;H I;2S1;2;2;0;2;82303.0;ground_of_this_ion;1.008;2;H I 2S1 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L003;H I;2P1;2;2;1;6;82303.0;ground_of_this_ion;1.008;3;H I 2P1 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L004;H I;3S1;3;2;0;2;97544.0;ground_of_this_ion;1.008;4;H I 3S1 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L005;H I;3P1;3;2;1;6;97544.0;ground_of_this_ion;1.008;5;H I 3P1 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L006;H I;3D1;3;2;2;10;97544.0;ground_of_this_ion;1.008;6;H I 3D1 2D;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L007;H I;4S1;4;2;0;2;102879.0;ground_of_this_ion;1.008;7;H I 4S1 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L008;H I;4P1;4;2;1;6;102879.0;ground_of_this_ion;1.008;8;H I 4P1 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L009;H I;4D1;4;2;2;10;102879.0;ground_of_this_ion;1.008;9;H I 4D1 2D;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L010;H I;4F1;4;2;3;14;102879.0;ground_of_this_ion;1.008;10;H I 4F1 2F;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L011;H I;5S1;5;2;0;2;105348.0;ground_of_this_ion;1.008;11;H I 5S1 2S;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L012;H I;5P1;5;2;1;6;105348.0;ground_of_this_ion;1.008;12;H I 5P1 2P;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L013;H I;5D1;5;2;2;10;105348.0;ground_of_this_ion;1.008;13;H I 5D1 2D;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L014;H I;5F1;5;2;3;14;105348.0;ground_of_this_ion;1.008;14;H I 5F1 2F;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat
+H_0:L015;H I;5G1;5;2;4;18;105348.0;ground_of_this_ion;1.008;15;H I 5G1 2G;https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat

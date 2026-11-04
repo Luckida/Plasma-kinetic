@@ -1,0 +1,482 @@
+{
+  "schema": "ParticleReactions-1",
+  "reviewed": true,
+  "elements": [
+    "He",
+    "Li"
+  ],
+  "selectors": {
+    "Li(2s)": {
+      "element": "Li",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 2,
+      "L": 0
+    },
+    "Li(2p)": {
+      "element": "Li",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 2,
+      "L": 1
+    },
+    "He(2^3S)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 0
+    },
+    "He(2^1S)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 1,
+      "L": 0
+    },
+    "He(2^3P)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 1
+    },
+    "He(2^1P)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 1,
+      "L": 1
+    }
+  },
+  "reactions": [
+    {
+      "id": "BR15:2->3",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^3S)": 1
+      },
+      "cross_section_id": "BR15:2->3",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:2->3"
+    },
+    {
+      "id": "BR15:3->2",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^3S)": 1
+      },
+      "products": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:3->2",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:3->2"
+    },
+    {
+      "id": "BR15:2->4",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^1S)": 1
+      },
+      "cross_section_id": "BR15:2->4",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:2->4"
+    },
+    {
+      "id": "BR15:4->2",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^1S)": 1
+      },
+      "products": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:4->2",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:4->2"
+    },
+    {
+      "id": "BR15:2->5",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^3P)": 1
+      },
+      "cross_section_id": "BR15:2->5",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:2->5"
+    },
+    {
+      "id": "BR15:5->2",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^3P)": 1
+      },
+      "products": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:5->2",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:5->2"
+    },
+    {
+      "id": "BR15:2->6",
+      "kind": "heavy_quenching",
+      "reactants": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:2->6",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:2->6"
+    },
+    {
+      "id": "BR15:6->2",
+      "kind": "heavy_quenching",
+      "reactants": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:6->2",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:6->2"
+    },
+    {
+      "id": "BR15:2->7",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^1P)": 1
+      },
+      "cross_section_id": "BR15:2->7",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:2->7"
+    },
+    {
+      "id": "BR15:7->2",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^1P)": 1
+      },
+      "products": {
+        "Li(2s)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:7->2",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:7->2"
+    },
+    {
+      "id": "BR15:3->5",
+      "kind": "heavy_quenching",
+      "reactants": {
+        "Li+": 1,
+        "He(2^3S)": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^3P)": 1
+      },
+      "cross_section_id": "BR15:3->5",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:3->5"
+    },
+    {
+      "id": "BR15:5->3",
+      "kind": "heavy_quenching",
+      "reactants": {
+        "Li+": 1,
+        "He(2^3P)": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^3S)": 1
+      },
+      "cross_section_id": "BR15:5->3",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:5->3"
+    },
+    {
+      "id": "BR15:3->6",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^3S)": 1
+      },
+      "products": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:3->6",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:3->6"
+    },
+    {
+      "id": "BR15:6->3",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^3S)": 1
+      },
+      "cross_section_id": "BR15:6->3",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:6->3"
+    },
+    {
+      "id": "BR15:4->6",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^1S)": 1
+      },
+      "products": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:4->6",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:4->6"
+    },
+    {
+      "id": "BR15:6->4",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^1S)": 1
+      },
+      "cross_section_id": "BR15:6->4",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:6->4"
+    },
+    {
+      "id": "BR15:4->7",
+      "kind": "heavy_quenching",
+      "reactants": {
+        "Li+": 1,
+        "He(2^1S)": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^1P)": 1
+      },
+      "cross_section_id": "BR15:4->7",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:4->7"
+    },
+    {
+      "id": "BR15:7->4",
+      "kind": "heavy_quenching",
+      "reactants": {
+        "Li+": 1,
+        "He(2^1P)": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^1S)": 1
+      },
+      "cross_section_id": "BR15:7->4",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:7->4"
+    },
+    {
+      "id": "BR15:5->6",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^3P)": 1
+      },
+      "products": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:5->6",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:5->6"
+    },
+    {
+      "id": "BR15:6->5",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^3P)": 1
+      },
+      "cross_section_id": "BR15:6->5",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:6->5"
+    },
+    {
+      "id": "BR15:6->7",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "products": {
+        "Li+": 1,
+        "He(2^1P)": 1
+      },
+      "cross_section_id": "BR15:6->7",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:6->7"
+    },
+    {
+      "id": "BR15:7->6",
+      "kind": "charge_exchange",
+      "reactants": {
+        "Li+": 1,
+        "He(2^1P)": 1
+      },
+      "products": {
+        "Li(2p)": 1,
+        "He+": 1
+      },
+      "cross_section_id": "BR15:7->6",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+      "model_note": "Printed-curve digitization. Values below the printed floor (~1e-23 cm2) are unavailable and set to zero; threshold and inverse detailed balance are explicit. Above 100 eV no data. No extra statistical averaging.",
+      "rate_id": "BR15:7->6"
+    },
+    {
+      "id": "S23:He3S_Li:PI_model",
+      "reactants": {
+        "He(2^3S)": 1,
+        "Li(2s)": 1
+      },
+      "products": {
+        "He": 1,
+        "Li+": 1,
+        "e": 1
+      },
+      "kind": "penning",
+      "cross_section_id": "S23:He3S_Li:PI_model",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Sixt, Chung, Stienkemeier & Dulitz 2023, JPCA 127, 4407, Table 2; doi:10.1021/acs.jpca.3c00431",
+      "estimated": true,
+      "model_note": "Explicit model: sigma(E)=k_reactive(44 meV)/v0*(E/44 meV)^(-1/3); C6 capture scaling extrapolated from one semiclassical energy. Unpolarized statistical doublet weights 1/3 for 3S, 1 for 1S, 1/9 Sigma+2/9 Pi for 3P. The Gamma/3 Pi variant of Table 2 is used. Not measured broadband sigma(E); associative molecular branch (roughly 0.5-2% in Grzesiak 2019 beams) omitted."
+    },
+    {
+      "id": "S23:He1S_Li:PI_model",
+      "reactants": {
+        "He(2^1S)": 1,
+        "Li(2s)": 1
+      },
+      "products": {
+        "He": 1,
+        "Li+": 1,
+        "e": 1
+      },
+      "kind": "penning",
+      "cross_section_id": "S23:He1S_Li:PI_model",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Sixt, Chung, Stienkemeier & Dulitz 2023, JPCA 127, 4407, Table 2; doi:10.1021/acs.jpca.3c00431",
+      "estimated": true,
+      "model_note": "Explicit model: sigma(E)=k_reactive(44 meV)/v0*(E/44 meV)^(-1/3); C6 capture scaling extrapolated from one semiclassical energy. Unpolarized statistical doublet weights 1/3 for 3S, 1 for 1S, 1/9 Sigma+2/9 Pi for 3P. The Gamma/3 Pi variant of Table 2 is used. Not measured broadband sigma(E); associative molecular branch (roughly 0.5-2% in Grzesiak 2019 beams) omitted."
+    },
+    {
+      "id": "S23:He3P_Li:PI_model",
+      "reactants": {
+        "He(2^3P)": 1,
+        "Li(2s)": 1
+      },
+      "products": {
+        "He": 1,
+        "Li+": 1,
+        "e": 1
+      },
+      "kind": "penning",
+      "cross_section_id": "S23:He3P_Li:PI_model",
+      "coefficient_convention": "unordered_cross_section",
+      "source": "Sixt, Chung, Stienkemeier & Dulitz 2023, JPCA 127, 4407, Table 2; doi:10.1021/acs.jpca.3c00431",
+      "estimated": true,
+      "model_note": "Explicit model: sigma(E)=k_reactive(44 meV)/v0*(E/44 meV)^(-1/3); C6 capture scaling extrapolated from one semiclassical energy. Unpolarized statistical doublet weights 1/3 for 3S, 1 for 1S, 1/9 Sigma+2/9 Pi for 3P. The Gamma/3 Pi variant of Table 2 is used. Not measured broadband sigma(E); associative molecular branch (roughly 0.5-2% in Grzesiak 2019 beams) omitted."
+    }
+  ]
+}

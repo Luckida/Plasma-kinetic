@@ -1,0 +1,8 @@
+{
+  "url": "https://www.pa.uky.edu/~verner/dima/photo/photo.dat",
+  "sha256_bytes": "a53e73b0af4cc6b801aef67b84bd964e3ed8c9c4992f214e4a69dc7e4443f389",
+  "sha256_science": "a53e73b0af4cc6b801aef67b84bd964e3ed8c9c4992f214e4a69dc7e4443f389",
+  "source_version": "pinned",
+  "reference": "Verner et al. 1996, ApJ 465,487; ground states only",
+  "retrieved_utc": "2026-10-31T16:54:25.599381+00:00"
+}

@@ -1,0 +1,5 @@
+﻿id;reason;source
+He3S_Liplus_RCT;Radiative CT exists, but the primary numerical k(T) table/fit of Zamecnikova 2018 was not accessible. Abstract range 1.75e-15..3.16e-14 is not a temperature law. No constant fabricated.;doi:10.3847/1538-4357/aae64f
+He3S_Liplus_RA;"Published total radiative association fit exists (Augustovicova 2014 Table3), but state-resolved molecular product and destruction/radiation data are not bundled; not merged into ground LiHe+.";doi:10.1088/0004-637X/782/1/46
+He_Li_AI;"LiHe+ molecular branch requires a separate molecular energy/state/destruction model; not silently assigned to Penning ionization.";doi:10.1063/1.5063709
+He_excited_Li2p_PI;"Fine-structure and molecular symmetry branching needed; no arbitrary reuse of Li(2s) coefficient.";doi:10.1103/PhysRevA.102.022818

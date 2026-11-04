@@ -1,0 +1,3 @@
+﻿id;reason;source
+Li_H_LiH;"LiH/LiH+/Li- molecular formation/destruction and rovibrational kinetics require a dedicated molecular dataset; no arbitrary ground-product closure supplied.";Galli & Palla 1998 Table4
+Li_H_bound_bound;"State-resolved Li+H excitation/ion-pair formation not bundled; H--Li atomic charge-exchange pack is not a complete molecular network.";"Barklem et al. 2003; Belyaev & Barklem 2003"

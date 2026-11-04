@@ -1,0 +1,10 @@
+﻿id;species;configuration;n;multiplicity;L;g;energy_cm1;energy_reference;mass_u;source_index;label;source
+Li_0:L001;Li I;1S2 2S1;2;2;0;2;0.0;ground_of_this_ion;6.94;1;Li I 1S2 2S1 2S;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L002;Li I;1S2 2P1;2;2;1;6;14850.0;ground_of_this_ion;6.94;2;Li I 1S2 2P1 2P;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L003;Li I;1S2 3S1;3;2;0;2;26890.0;ground_of_this_ion;6.94;3;Li I 1S2 3S1 2S;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L004;Li I;1S2 3P1;3;2;1;6;30626.0;ground_of_this_ion;6.94;4;Li I 1S2 3P1 2P;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L005;Li I;1S2 3D1;3;2;2;10;30893.0;ground_of_this_ion;6.94;5;Li I 1S2 3D1 2D;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L006;Li I;1S2 4S1;4;2;0;2;34643.0;ground_of_this_ion;6.94;6;Li I 1S2 4S1 2S;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L007;Li I;1S2 4P1;4;2;1;6;36112.0;ground_of_this_ion;6.94;7;Li I 1S2 4P1 2P;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L008;Li I;1S2 4D1;4;2;2;10;36228.0;ground_of_this_ion;6.94;8;Li I 1S2 4D1 2D;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat
+Li_0:L009;Li I;1S2 4F1;4;2;3;14;36229.0;ground_of_this_ion;6.94;9;Li I 1S2 4F1 2F;https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat

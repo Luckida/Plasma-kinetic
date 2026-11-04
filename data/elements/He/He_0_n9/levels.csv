@@ -1,0 +1,20 @@
+﻿id;species;configuration;n;multiplicity;L;g;energy_cm1;energy_reference;mass_u;source_index;label;source
+He_0:L001;He I;1S2;1;1;0;1;0.0;ground_of_this_ion;4.002602;1;He I 1S2 1S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L002;He I;1S1 2S1;2;3;0;3;159856.0776;ground_of_this_ion;4.002602;2;He I 1S1 2S1 3S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L003;He I;1S1 2S1;2;1;0;1;166277.542;ground_of_this_ion;4.002602;3;He I 1S1 2S1 1S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L004;He I;1S1 2P1;2;3;1;9;169087.0135;ground_of_this_ion;4.002602;4;He I 1S1 2P1 3P;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L005;He I;1S1 2P1;2;1;1;3;171135.0;ground_of_this_ion;4.002602;5;He I 1S1 2P1 1P;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L006;He I;1S1 3S1;3;3;0;3;183236.892;ground_of_this_ion;4.002602;6;He I 1S1 3S1 3S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L007;He I;1S1 3S1;3;1;0;1;184864.932;ground_of_this_ion;4.002602;7;He I 1S1 3S1 1S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L008;He I;1S1 3P1;3;3;1;9;185564.7049;ground_of_this_ion;4.002602;8;He I 1S1 3P1 3P;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L009;He I;1S1 3D1;3;3;2;15;186101.6597;ground_of_this_ion;4.002602;9;He I 1S1 3D1 3D;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L010;He I;1S1 3D1;3;1;2;5;186105.0698;ground_of_this_ion;4.002602;10;He I 1S1 3D1 1D;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L011;He I;1S1 3P1;3;1;1;3;186209.4684;ground_of_this_ion;4.002602;11;He I 1S1 3P1 1P;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L012;He I;1S1 4S1;4;3;0;3;190298.2165;ground_of_this_ion;4.002602;12;He I 1S1 4S1 3S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L013;He I;1S1 4S1;4;1;0;1;190940.33;ground_of_this_ion;4.002602;13;He I 1S1 4S1 1S;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L014;He I;1S1 4P1;4;3;1;9;191217.1603;ground_of_this_ion;4.002602;14;He I 1S1 4P1 3P;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L015;He I;1S1 4D1;4;3;2;15;191444.5885;ground_of_this_ion;4.002602;15;He I 1S1 4D1 3D;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L016;He I;1S1 4D1;4;1;2;5;191446.559;ground_of_this_ion;4.002602;16;He I 1S1 4D1 1D;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L017;He I;1S1 4F1;4;3;3;21;191451.9838;ground_of_this_ion;4.002602;17;He I 1S1 4F1 3F;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L018;He I;1S1 4F1;4;1;3;7;191452.0005;ground_of_this_ion;4.002602;18;He I 1S1 4F1 1F;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat
+He_0:L019;He I;1S1 4P1;4;1;1;3;191492.816;ground_of_this_ion;4.002602;19;He I 1S1 4P1 1P;https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat

@@ -1,0 +1,16 @@
+{
+  "schema": "LXCatMapping-1",
+  "projectile": "electron",
+  "energy_scale_to_eV": 1.0,
+  "area_scale_to_cm2": 10000.0,
+  "note": "Template only. Replace IDs/block indices with actually matching levels; unit scale assumes the original source uses m2.",
+  "channels": [
+    {
+      "block_index": 1,
+      "id": "REPLACE_WITH_TRANSITION_ID",
+      "kind": "electron_excitation",
+      "initial": "REPLACE_WITH_INITIAL_LEVEL_ID",
+      "final": "REPLACE_WITH_FINAL_LEVEL_ID"
+    }
+  ]
+}

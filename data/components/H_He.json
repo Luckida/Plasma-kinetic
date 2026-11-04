@@ -1,0 +1,19 @@
+{
+  "schema": "ChemicalComponents-1",
+  "components": [
+    {
+      "id": "HeH+",
+      "label": "HeH⁺ X¹Σ⁺ (effective ground)",
+      "charge": 1,
+      "nuclei": {
+        "H": 1,
+        "He": 1
+      },
+      "energy_anchors": {
+        "H_1": 1
+      },
+      "energy_offset_eV": -1.84412,
+      "source": "ATcT HeH+; Zygelman, Stancil & Dalgarno 1998 D0=1.84412 eV"
+    }
+  ]
+}

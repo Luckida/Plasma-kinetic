@@ -1,0 +1,296 @@
+{
+  "schema": "AtomicPack-1",
+  "species": "Li I",
+  "element": "Li",
+  "charge": 0,
+  "nmax": 9,
+  "runtime_adapter": null,
+  "status": "data_preparation_only",
+  "energy_reference": "ground_of_this_ion",
+  "sources": {
+    "adas_h0.dat": {
+      "url": "https://open.adas.ac.uk/download/adf04/hlike/hlike_ha00%5D%5Bh0ls.dat",
+      "sha256_bytes": "d462f8a595726446023451bf869e83ba3063e14cbb55cb1a7ccb08950fb87e48",
+      "sha256_science": "accffdd1b3575111542acab3d7931402416851c7ef9f9f93e25fa6d051c73a25",
+      "source_version": "pinned",
+      "reference": "Anderson et al. 2000, correction 2002; OPEN-ADAS HA00",
+      "retrieved_utc": "2026-10-31T16:34:14.605002+00:00"
+    },
+    "ccc_h0.zip": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/H/I/ELECTRON_IMPACT/e-H_XSEC_LS.zip",
+      "sha256_bytes": "57730e72656639e92c47c1b8457db0edac5a69ae93db6c357471a93759af1fc9",
+      "sha256_science": "57730e72656639e92c47c1b8457db0edac5a69ae93db6c357471a93759af1fc9",
+      "source_version": "pinned",
+      "reference": "Bray & Stelbovics 1992 PRA 46 6995; CCC August 2026",
+      "retrieved_utc": "2026-10-31T16:34:22.458293+00:00"
+    },
+    "adas_index_H.html": {
+      "url": "https://open.adas.ac.uk/element/h",
+      "sha256_bytes": "5e3a767c037faa23b55c1657613814c90684fc171e3a9e065c9f73eae7759519",
+      "sha256_science": "5e3a767c037faa23b55c1657613814c90684fc171e3a9e065c9f73eae7759519",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "",
+      "retrieved_utc": "2026-10-31T16:34:27.118548+00:00"
+    },
+    "adas_he0.dat": {
+      "url": "https://open.adas.ac.uk/download/adf04/helike/helike_pb04he0.dat",
+      "sha256_bytes": "c9ffa71963ad471debc3430f2c86de333e51bf6374d85ef270f86875b8bc30ff",
+      "sha256_science": "0db91cebdfc501567c96f8bada6107c6b674597f6676c7c9eeed30099bc3a409",
+      "source_version": "pinned",
+      "reference": "Paton–Bryans 2004, OPEN-ADAS PB04",
+      "retrieved_utc": "2026-10-31T16:34:30.486905+00:00"
+    },
+    "ccc_he0.zip": {
+      "url": "https://atom.curtin.edu.au/CCC-DB/He/I/ELECTRON_IMPACT/e-He_sig.zip",
+      "sha256_bytes": "d68ba39d81c8252043e12f92155c1a9ab73117b55abfd971b98d6a65c6993a85",
+      "sha256_science": "d68ba39d81c8252043e12f92155c1a9ab73117b55abfd971b98d6a65c6993a85",
+      "source_version": "pinned",
+      "reference": "Fursa & Bray 1995 PRA 52 1279; CCC April 2026",
+      "retrieved_utc": "2026-10-31T16:34:36.173800+00:00"
+    },
+    "adas_index_He.html": {
+      "url": "https://open.adas.ac.uk/element/he",
+      "sha256_bytes": "8f7df261018baad6858dbb90aa41007dfe31ee121bd77d02f1f844012b77e2f8",
+      "sha256_science": "8f7df261018baad6858dbb90aa41007dfe31ee121bd77d02f1f844012b77e2f8",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "",
+      "retrieved_utc": "2026-10-31T16:34:42.619020+00:00"
+    },
+    "adas_li0.dat": {
+      "url": "https://open.adas.ac.uk/download/adf04/lilike/lilike_cpb02%5D%5Bli0.dat",
+      "sha256_bytes": "43f6cfe138c13c95e0bf629285654bd375666a9dab0a84557afcfdf40141e975",
+      "sha256_science": "6d784be36837f9092aa57b93f401cfc4a089af0825189dd9602d99eb6fab67ab",
+      "source_version": "pinned",
+      "reference": "Griffin et al. 2001, PRA 64 032718; OPEN-ADAS CPB02",
+      "retrieved_utc": "2026-10-31T16:34:48.512790+00:00"
+    },
+    "ccc_Li_form.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.1?element=Li&charge=I&process=Electron+Impact",
+      "sha256_bytes": "524f42d8659037350b091ca6454487fcc768ccf0a291362c4fc4cbbc95257e2f",
+      "sha256_science": "524f42d8659037350b091ca6454487fcc768ccf0a291362c4fc4cbbc95257e2f",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "",
+      "retrieved_utc": "2026-10-31T16:34:54.259247+00:00"
+    },
+    "ccc_Li_2S_2S.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=2s_dSz2szX2YS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "4154b0463a80c12e2b1aef76e823d44660947562e8bca3308aef79cf54fc9890",
+      "sha256_science": "4154b0463a80c12e2b1aef76e823d44660947562e8bca3308aef79cf54fc9890",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:00.275222+00:00"
+    },
+    "ccc_Li_2S_2P.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=2p_dPz2pzX2YP&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "c090ae3a19d98851eb67a67a7299518db155d5552ff068c2e0e8e32723d74baa",
+      "sha256_science": "c090ae3a19d98851eb67a67a7299518db155d5552ff068c2e0e8e32723d74baa",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:05.915448+00:00"
+    },
+    "ccc_Li_2S_3S.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=3s_dSz3szX2YS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "91ce39ce809deb8add58d8d821281375266d87cf2d17f7e58880b293e88e4929",
+      "sha256_science": "91ce39ce809deb8add58d8d821281375266d87cf2d17f7e58880b293e88e4929",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:11.647191+00:00"
+    },
+    "ccc_Li_2S_3P.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=3p_dPz3pzX2YP&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "dd6b96fa3593c44ff0ed312db86a55508f3767286e721b39eb39bd59a9bb3b82",
+      "sha256_science": "dd6b96fa3593c44ff0ed312db86a55508f3767286e721b39eb39bd59a9bb3b82",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:17.347195+00:00"
+    },
+    "ccc_Li_2S_3D.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=3d_dDz3dzX2YD&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "100b907109f67020739047b24c402e3a45c2c766564b4042898a337ad1ade928",
+      "sha256_science": "100b907109f67020739047b24c402e3a45c2c766564b4042898a337ad1ade928",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:23.079160+00:00"
+    },
+    "ccc_Li_2S_4S.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=4s_dSz4szX2YS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "75b0c5d782060e841a71405ec473f9aa5c5de76bae1eff803eb64838eb147b64",
+      "sha256_science": "75b0c5d782060e841a71405ec473f9aa5c5de76bae1eff803eb64838eb147b64",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:28.631321+00:00"
+    },
+    "ccc_Li_2S_TICS.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=tics_TICSzticszTICS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "ac76cfef7ca94accf4004267323251cfc6c7b6a68bcd0893ef4e634ad2a91ed9",
+      "sha256_science": "ac76cfef7ca94accf4004267323251cfc6c7b6a68bcd0893ef4e634ad2a91ed9",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:45.839199+00:00"
+    },
+    "ccc_Li_2S_MTCS.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2s_dSz2szX2YS&upp=mtcs_MTCSzmtcszMTCS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "f52b4e035c9ffc55dc6137f29e7f54bc54f4d74b4f469eaac4a25701220ced40",
+      "sha256_science": "f52b4e035c9ffc55dc6137f29e7f54bc54f4d74b4f469eaac4a25701220ced40",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:51.631408+00:00"
+    },
+    "ccc_Li_2P_2P.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=2p_dPz2pzX2YP&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "fa313fbc286a0609e0d9ba1550a16970857f41e8b66750b921036e9a21d1884c",
+      "sha256_science": "fa313fbc286a0609e0d9ba1550a16970857f41e8b66750b921036e9a21d1884c",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:35:57.331392+00:00"
+    },
+    "ccc_Li_2P_3S.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=3s_dSz3szX2YS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "ca6f0be7c7fa245c68d0f99119d472fbc5965e786e0fb8b57ac4c18ef626e225",
+      "sha256_science": "ca6f0be7c7fa245c68d0f99119d472fbc5965e786e0fb8b57ac4c18ef626e225",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:36:03.155227+00:00"
+    },
+    "ccc_Li_2P_3P.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=3p_dPz3pzX2YP&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "6c0154895463aa6e89049983120666713009abb2e916042985fdaa1bc7b31f69",
+      "sha256_science": "6c0154895463aa6e89049983120666713009abb2e916042985fdaa1bc7b31f69",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:36:08.859192+00:00"
+    },
+    "ccc_Li_2P_3D.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=3d_dDz3dzX2YD&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "317a68a098eb7aa9c400db94e1d95beb60d6f92d4d0f5b490eb66f11b14c8347",
+      "sha256_science": "317a68a098eb7aa9c400db94e1d95beb60d6f92d4d0f5b490eb66f11b14c8347",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:36:14.583284+00:00"
+    },
+    "ccc_Li_2P_4S.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=4s_dSz4szX2YS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "0f69be7f0bac4dd53a261dc8703eeb72dc859add341e89c20beee54591ff526d",
+      "sha256_science": "0f69be7f0bac4dd53a261dc8703eeb72dc859add341e89c20beee54591ff526d",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:36:20.683223+00:00"
+    },
+    "ccc_Li_2P_TICS.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=tics_TICSzticszTICS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "a449782841d5dbba981dd17a1b435371b468c23f220dfdb9be2ce17e12fd2ac3",
+      "sha256_science": "a449782841d5dbba981dd17a1b435371b468c23f220dfdb9be2ce17e12fd2ac3",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:36:37.843194+00:00"
+    },
+    "ccc_Li_2P_MTCS.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=2p_dPz2pzX2YP&upp=mtcs_MTCSzmtcszMTCS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "edda567219b131d7ba22516dad5d3123ac7c61c318e1ec450ff095e87cf14e5f",
+      "sha256_science": "edda567219b131d7ba22516dad5d3123ac7c61c318e1ec450ff095e87cf14e5f",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:36:43.443304+00:00"
+    },
+    "ccc_Li_3P_3P.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=3p_dPz3pzX2YP&upp=3p_dPz3pzX2YP&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "92470892ae8659820996f997a2a03b1d4b879cc48857b44867d84c216bbc1e08",
+      "sha256_science": "92470892ae8659820996f997a2a03b1d4b879cc48857b44867d84c216bbc1e08",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:37:34.600866+00:00"
+    },
+    "ccc_Li_3P_3D.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=3p_dPz3pzX2YP&upp=3d_dDz3dzX2YD&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "ffc81c7ac4a2a8181e75956cf84d814ca21203178608d159ff14527cfaaaa20c",
+      "sha256_science": "ffc81c7ac4a2a8181e75956cf84d814ca21203178608d159ff14527cfaaaa20c",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:37:40.211206+00:00"
+    },
+    "ccc_Li_3P_4S.html": {
+      "url": "https://atom.curtin.edu.au/cgi-bin/c4nick.in?element=Li&charge=I&process=ELECTRON_IMPACT&low=3p_dPz3pzX2YP&upp=4s_dSz4szX2YS&data_type=cross&cs_unit=cm2",
+      "sha256_bytes": "46830acc3ddc3fe8098dae2eb21aba0b012ac30ea8fa1b3207945357dc379ddf",
+      "sha256_science": "46830acc3ddc3fe8098dae2eb21aba0b012ac30ea8fa1b3207945357dc379ddf",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "I. Bray, Phys. Rev. A 49, 1066 (1994)",
+      "retrieved_utc": "2026-10-31T16:37:45.859244+00:00"
+    },
+    "adas_index_Li.html": {
+      "url": "https://open.adas.ac.uk/element/li",
+      "sha256_bytes": "28e4bac332028900afba10a4a160d2f97ddc0c5b22fd5a6d4d42fc6cdfd9f4cf",
+      "sha256_science": "28e4bac332028900afba10a4a160d2f97ddc0c5b22fd5a6d4d42fc6cdfd9f4cf",
+      "source_version": "recorded_first_use_unreviewed",
+      "reference": "",
+      "retrieved_utc": "2026-10-31T16:39:05.104551+00:00"
+    }
+  },
+  "gaps": [
+    "CCC download error 2S → 4P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 2S → 4D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет конечного 4F для Li I 1S2 2S1 2S",
+    "CCC download error 2P → 4P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 2P → 4D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет конечного 4F для Li I 1S2 2P1 2P",
+    "CCC download error 3S → 3S: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3S → 3P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3S → 3D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3S → 4S: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3S → 4P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3S → 4D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет конечного 4F для Li I 1S2 3S1 2S",
+    "CCC download error 3S → TICS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3S → MTCS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3P → 4P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3P → 4D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет конечного 4F для Li I 1S2 3P1 2P",
+    "CCC download error 3P → TICS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 3P → MTCS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет начального Li I 1S2 3D1 2D",
+    "CCC download error 4S → 4S: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 4S → 4P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 4S → 4D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет конечного 4F для Li I 1S2 4S1 2S",
+    "CCC download error 4S → TICS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 4S → MTCS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 4P → 4P: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 4P → 4D: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет конечного 4F для Li I 1S2 4P1 2P",
+    "CCC download error 4P → TICS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC download error 4P → MTCS: HTTPError: HTTP Error 500: Internal Server Error",
+    "CCC: нет начального Li I 1S2 4D1 2D",
+    "CCC: нет начального Li I 1S2 4F1 2F"
+  ],
+  "adf04": {
+    "parents": [
+      {
+        "parent": 1,
+        "threshold_cm1": 43489.0,
+        "term": "1S"
+      },
+      {
+        "parent": 2,
+        "threshold_cm1": 516797.0,
+        "term": "3S"
+      }
+    ],
+    "unsupported_transition_codes": {},
+    "infinite_temperature_upsilon": "extra final value, when present, not exported as a finite-temperature node",
+    "temperature_min_K": 1000.0,
+    "temperature_max_K": 100000.0
+  },
+  "download_errors": 25,
+  "catalogue_sha256": "e710d329465ddc08f486f286c90a63b8bd3a9340d1f5904d0a9335e87430cd1a",
+  "catalogue_selection_sha256": "c55380a2722a58b4d6ae2f1cd263337b60fb24e9d1f88db4531328b59cd4e33b",
+  "kinetic_ready": false,
+  "kinetic_ready_note": "MixtureSlab consumes these actual levels, lines and energy cross sections; kinetic closure still requires explicit coverage checks.",
+  "files_sha256": {
+    "electron_cross_sections.csv": "50b9101b1071945930a69427240533caefbf821832736d2f6e612f976fa8e7ee",
+    "candidates.json": "bef52abdeba2581e4f7e4d22333edf6e4b38a39d3d8a9a558b15281f6ca82a9d",
+    "process_coverage.csv": "eeaec048eaa5287445a0948839e2ef88b186284928d9eccf76ebf009de979d7c",
+    "lines.csv": "55aa2a5ea2af7aca4e7e3c55db89d1971949777006b0a424b54f4f8a8b25344f",
+    "cross_section_catalogue.csv": "2dfc5e7d885b3b157f51a4181b066c09108a49154a72b6137d06742d7af52c58",
+    "levels.csv": "961a8b18b0aea436e6c01fc892e66deb9f3b8fac81f883adfe094e78ac7f5444",
+    "maxwellian_upsilon.csv": "200ad5cc028b0e00216e1e1ae04c1efa6a4f698a5be0d28d2459fbd4503e8545"
+  }
+}

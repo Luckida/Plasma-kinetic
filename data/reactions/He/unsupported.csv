@@ -1,0 +1,2 @@
+﻿id;reason;source
+He_three_body;Three-body He+ conversion, excimer formation and electron-assisted three-body recombination need a 3-body phase operator, not a substituted 2-body coefficient.;"He, Brinkmann, Kemaneci & Gibson 2025, PSST 34 095018, table A1; https://doi.org/10.1088/1361-6595/adffe6; coefficients converted m3/s -> cm3/s"

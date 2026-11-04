@@ -1,0 +1,202 @@
+{
+  "schema": "MixtureKineticSlab-2.1",
+  "atomic_data": {
+    "species": [
+      "H I",
+      "He I"
+    ],
+    "nmax": 9,
+    "prepared_directory": "../data/elements",
+    "offline": true,
+    "element_directory": "../data/elements",
+    "cache_directory": "../cache/atomic_sources"
+  },
+  "initial_cm3": {
+    "H": 1000000000.0,
+    "He": 9000000000.0
+  },
+  "level_selection": {
+    "mode": "auto",
+    "relative_tolerance": 1e-06,
+    "forced_levels": [
+      "He_0:L002",
+      "He_0:L004"
+    ],
+    "missing_data": "report"
+  },
+  "electron_initial": {
+    "kind": "maxwellian",
+    "Te_eV": 30.0,
+    "match_moments": true
+  },
+  "heavy_initial": {
+    "H": {
+      "kind": "maxwellian",
+      "Ti_K": 300000.0,
+      "match_moments": true
+    },
+    "He": {
+      "kind": "maxwellian",
+      "Ti_K": 300000.0,
+      "match_moments": true
+    }
+  },
+  "phase_grid": {
+    "energy_min_eV": 1e-05,
+    "energy_max_eV": "auto",
+    "energy_points": 32,
+    "angular_points": 4
+  },
+  "heavy_phase_grid": {
+    "energy_min_eV": 1e-06,
+    "energy_max_eV": "auto",
+    "energy_points": 16,
+    "angular_points": 4
+  },
+  "cells": 10,
+  "thickness_cm": 1.0,
+  "particle_boundary": {
+    "kind": "periodic"
+  },
+  "electric_field": {
+    "mode": "prescribed",
+    "Ez_V_cm": 0.0
+  },
+  "radiation": {
+    "scale": 1.0,
+    "continuum_points": 200,
+    "line_points": 41,
+    "Tn_K": 300000.0,
+    "angular_points": 4,
+    "enabled": true,
+    "electron_scattering": false,
+    "normalization": "integral",
+    "spectrum_mode": "probe",
+    "spectrum_file": "",
+    "spectrum_options": {
+      "x_unit": "auto",
+      "y_kind": "relative"
+    },
+    "multiplier_W_cm2": 100.0,
+    "beam_mu": 1.0,
+    "start_s": 1e-08,
+    "stop_s": 2e-08,
+    "left_diffuse_scale": 0.0,
+    "right_diffuse_scale": 0.0
+  },
+  "processes": {},
+  "collisions": {
+    "ee_bgk": false,
+    "ii_bgk": false,
+    "ei_binary": false,
+    "neutral_elastic": false,
+    "coulomb_log": 10.0,
+    "maximum_phase_loss": 0.2,
+    "relative_azimuth_points": 2,
+    "scattering_azimuth_points": 2,
+    "neutral_low_energy": "constant"
+  },
+  "performance": {
+    "workers": 2,
+    "radiation_backend": "numpy",
+    "collision_cache_mb": 128
+  },
+  "solver": {
+    "t_end_s": 2e-07,
+    "max_step_s": 2e-09,
+    "min_step_s": 1e-16,
+    "samples": 5,
+    "max_steps": 100000
+  },
+  "diagnostics": {
+    "reaction_levels": [
+      "H",
+      "He"
+    ],
+    "phase_history_csv": false,
+    "plots_on_finish": false,
+    "output_mode": "compact"
+  },
+  "progress": {
+    "mode": "text",
+    "interval_s": 0.5
+  },
+  "output_directory": "../outputs/output_gas_probe",
+  "chemistry": {
+    "enabled": true,
+    "rate_policy": "maxwellian_moments",
+    "disabled_ids": [
+      "LS05:Hplus_H:CX"
+    ],
+    "directory": "../data/reactions",
+    "components_directory": "../data/components",
+    "allow_estimated_rates": false
+  },
+  "gas": {
+    "mode": "densities",
+    "temperature_K": 300000.0,
+    "components": [
+      {
+        "species": "H",
+        "density_cm3": 1000000000.0
+      },
+      {
+        "species": "He",
+        "density_cm3": 9000000000.0
+      }
+    ],
+    "distributions": {
+      "default": {
+        "kind": "maxwellian",
+        "Ti_K": 300000.0,
+        "match_moments": true
+      }
+    }
+  },
+  "spatial_sources": [
+    {
+      "id": "Источник 1",
+      "mode": "radiation",
+      "enabled": true,
+      "position_cm": 0.005,
+      "width_cm": 0.0,
+      "start_s": 1e-08,
+      "stop_s": 2e-08,
+      "normalization": "integral",
+      "spectrum_mode": "probe",
+      "spectrum_file": "",
+      "spectrum_options": {
+        "x_unit": "auto",
+        "y_kind": "relative"
+      },
+      "multiplier_W_cm2": 1.0,
+      "mu": 1.0,
+      "direction": "both"
+    },
+    {
+      "id": "Источник 2",
+      "mode": "radiation",
+      "enabled": true,
+      "position_cm": 0.5,
+      "width_cm": 0.0,
+      "start_s": 1e-08,
+      "stop_s": 2e-08,
+      "normalization": "integral",
+      "spectrum_mode": "probe",
+      "spectrum_file": "",
+      "spectrum_options": {
+        "x_unit": "auto",
+        "y_kind": "relative"
+      },
+      "multiplier_W_cm2": 100.0,
+      "mu": 1.0,
+      "direction": "both"
+    }
+  ],
+  "probe": {
+    "mode": "flat",
+    "minimum_nm": 1082.0,
+    "maximum_nm": 1084.0,
+    "points": 501
+  }
+}

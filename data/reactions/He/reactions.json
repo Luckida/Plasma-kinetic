@@ -1,0 +1,80 @@
+{
+  "schema": "ParticleReactions-1",
+  "reviewed": true,
+  "elements": [
+    "He"
+  ],
+  "selectors": {
+    "He(2^3S)": {
+      "element": "He",
+      "charge": 0,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 0
+    }
+  },
+  "reactions": [
+    {
+      "id": "HE25:15:PI",
+      "kind": "penning",
+      "reactants": {
+        "He(2^3S)": 2
+      },
+      "products": {
+        "He": 1,
+        "He+": 1,
+        "e": 1
+      },
+      "rate_id": "HE25:15:PI",
+      "coefficient_convention": "event_rate",
+      "source": "He, Brinkmann, Kemaneci & Gibson 2025, PSST 34 095018, table A1; https://doi.org/10.1088/1361-6595/adffe6; coefficients converted m3/s -> cm3/s",
+      "model_note": "Scalar unpolarized ground-carrier plasma model. Product v,J distribution not resolved. Temperature limits here are explicit implementation guards, not an experimentally established uncertainty interval."
+    },
+    {
+      "id": "HE25:14:AI",
+      "kind": "associative_ionization",
+      "reactants": {
+        "He(2^3S)": 2
+      },
+      "products": {
+        "He2+": 1,
+        "e": 1
+      },
+      "rate_id": "HE25:14:AI",
+      "coefficient_convention": "event_rate",
+      "source": "He, Brinkmann, Kemaneci & Gibson 2025, PSST 34 095018, table A1; https://doi.org/10.1088/1361-6595/adffe6; coefficients converted m3/s -> cm3/s",
+      "model_note": "Scalar unpolarized ground-carrier plasma model. Product v,J distribution not resolved. Temperature limits here are explicit implementation guards, not an experimentally established uncertainty interval."
+    },
+    {
+      "id": "HE25:9:DR_ground",
+      "kind": "dissociative_recombination",
+      "reactants": {
+        "He2+": 1,
+        "e": 1
+      },
+      "products": {
+        "He": 2
+      },
+      "rate_id": "HE25:9:DR_ground",
+      "coefficient_convention": "event_rate",
+      "source": "He, Brinkmann, Kemaneci & Gibson 2025, PSST 34 095018, table A1; https://doi.org/10.1088/1361-6595/adffe6; coefficients converted m3/s -> cm3/s",
+      "model_note": "Scalar unpolarized ground-carrier plasma model. Product v,J distribution not resolved. Temperature limits here are explicit implementation guards, not an experimentally established uncertainty interval."
+    },
+    {
+      "id": "HE25:10:DR_triplet",
+      "kind": "dissociative_recombination",
+      "reactants": {
+        "He2+": 1,
+        "e": 1
+      },
+      "products": {
+        "He(2^3S)": 1,
+        "He": 1
+      },
+      "rate_id": "HE25:10:DR_triplet",
+      "coefficient_convention": "event_rate",
+      "source": "He, Brinkmann, Kemaneci & Gibson 2025, PSST 34 095018, table A1; https://doi.org/10.1088/1361-6595/adffe6; coefficients converted m3/s -> cm3/s",
+      "model_note": "Scalar unpolarized ground-carrier plasma model. Product v,J distribution not resolved. Temperature limits here are explicit implementation guards, not an experimentally established uncertainty interval."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schema": "ElementData-1",
+  "element": "Na",
+  "ground_stages": [
+    {
+      "charge": 0,
+      "g": 2,
+      "n": 3,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "[Ne]3s",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 5.13907696
+    },
+    {
+      "charge": 1,
+      "g": 1,
+      "n": 2,
+      "multiplicity": 1,
+      "L": 0,
+      "configuration": "1s2 2s2 2p6",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 47.28636
+    },
+    {
+      "charge": 2,
+      "g": 4,
+      "n": 2,
+      "multiplicity": 2,
+      "L": 1,
+      "configuration": "1s2 2s2 2p5",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 71.62
+    },
+    {
+      "charge": 3,
+      "g": 5,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 1,
+      "configuration": "1s2 2s2 2p4",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 98.936
+    },
+    {
+      "charge": 4,
+      "g": 4,
+      "n": 2,
+      "multiplicity": 4,
+      "L": 0,
+      "configuration": "1s2 2s2 2p3",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 138.404
+    },
+    {
+      "charge": 5,
+      "g": 1,
+      "n": 2,
+      "multiplicity": 3,
+      "L": 1,
+      "configuration": "1s2 2s2 2p2",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 172.23
+    },
+    {
+      "charge": 6,
+      "g": 2,
+      "n": 2,
+      "multiplicity": 2,
+      "L": 1,
+      "configuration": "1s2 2s2 2p",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 208.504
+    },
+    {
+      "charge": 7,
+      "g": 1,
+      "n": 2,
+      "multiplicity": 1,
+      "L": 0,
+      "configuration": "1s2 2s2",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 264.192
+    },
+    {
+      "charge": 8,
+      "g": 2,
+      "n": 2,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "1s2 2s",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 299.856
+    },
+    {
+      "charge": 9,
+      "g": 1,
+      "n": 1,
+      "multiplicity": 1,
+      "L": 0,
+      "configuration": "1s2",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 1465.0992
+    },
+    {
+      "charge": 10,
+      "g": 2,
+      "n": 1,
+      "multiplicity": 2,
+      "L": 0,
+      "configuration": "1s",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F",
+      "ionization_eV": 1648.702285
+    },
+    {
+      "charge": 11,
+      "g": 1,
+      "n": 1,
+      "multiplicity": 1,
+      "L": 0,
+      "configuration": "bare nucleus",
+      "source": "NIST ASD ground fine-structure level; https://doi.org/10.18434/T4W30F"
+    }
+  ],
+  "sources": {
+    "adas_na0": {
+      "url": "https://open.adas.ac.uk/download/adf04/nalike/nalike_ki08%5D%5Bna0.dat",
+      "sha256": "97557724a8d321a40f3d9990921531f0e97b7cde5359de08583abf399ec5c020",
+      "hash_mode": "adas_science",
+      "format": "adf04_ls3",
+      "reference": "Igenbergs et al 2008 ADNDT 94,981; KI08; https://doi.org/10.1016/j.adt.2008.06.001"
+    }
+  },
+  "species": {
+    "Na_0": {
+      "mass_u": 22.98976928,
+      "adf04": "adas_na0",
+      "electron_cross_sections": "ccc_alkali_form",
+      "ccc_labels": "alkali",
+      "runtime_adapter": "mixture_ls"
+    }
+  },
+  "notes": [
+    "Neutral Na LS levels/A/upsilon: OPEN-ADAS KI08; actual electron energy cross sections from the official CCC ELECTRON_IMPACT form, first-use hashes retained.",
+    "Na II–Na XII are ground carriers only, not a complete excited-ion atom. Fine-structure ground weights from NIST, scalar model.",
+    "Excited-state photoionization/RR and unspecified Na chemical channels remain missing, not estimated."
+  ]
+}

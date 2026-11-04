@@ -1,0 +1,3 @@
+﻿id;model;alpha_cm3_s;beta;gamma_K;Tmin_K;Tmax_K;reference_T_K;source;method;accuracy
+GP98:Li_Hplus:CT;power_exponential_temperature;2.5e-40;7.9;1210.0;100.0;20000.0;1.0;"Galli & Palla 1998, A&A 335 403, Table 4 Li7/Li8; https://arxiv.org/abs/astro-ph/9803315; primary processes Kimura et al. 1994 and Stancil & Zygelman 1996";published_fit;"implementation temperature guard; source validity not established here"
+GP98:Li_Hplus:RCT;power_exponential_temperature;1.7e-13;-0.051;282000.0;100.0;20000.0;1.0;"Galli & Palla 1998, A&A 335 403, Table 4 Li7/Li8; https://arxiv.org/abs/astro-ph/9803315; primary processes Kimura et al. 1994 and Stancil & Zygelman 1996";published_fit;"implementation temperature guard; source validity not established here"

@@ -1,0 +1,259 @@
+{
+  "source": "Belyaev, Rodionov, Augustovicova, Soldan & Kraemer 2015; doi:10.1093/mnras/stv391; vector extraction of Figs 5-7 (not CDS numeric tables)",
+  "source_pdf_sha256": "9cc96bd3b6ce3728c2ec6441fcf49e4c2b550acb9c22220d220299bfdef309a5",
+  "primary_copy": "https://www.mff.cuni.cz/cs/vedecka-rada/habilitacni-prace-dr-augustovicova.pdf",
+  "pages_1based": [
+    121,
+    123
+  ],
+  "method": "vector paths, not raster digitization; axes calibrated against PDF tick positions",
+  "sigma_axes": [
+    [
+      194.184,
+      334.578,
+      105.293,
+      204.076,
+      0.0,
+      2.0
+    ],
+    [
+      334.578,
+      474.887,
+      105.293,
+      204.076,
+      0.0,
+      2.0
+    ],
+    [
+      194.184,
+      334.578,
+      204.076,
+      302.887,
+      0.0,
+      2.0
+    ],
+    [
+      194.184,
+      334.58,
+      398.872,
+      497.655,
+      -1.0,
+      2.0
+    ],
+    [
+      334.58,
+      474.892,
+      398.872,
+      497.655,
+      -1.0,
+      2.0
+    ],
+    [
+      194.184,
+      334.58,
+      497.655,
+      596.466,
+      -1.0,
+      2.0
+    ]
+  ],
+  "curves": [
+    {
+      "drawing": 3,
+      "initial_channel": 2,
+      "final_channel": 4,
+      "panel": 0,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 1009,
+      "color": [
+        0.9215686321258545,
+        0.1764553338289261,
+        0.18037690222263336
+      ]
+    },
+    {
+      "drawing": 4,
+      "initial_channel": 2,
+      "final_channel": 6,
+      "panel": 0,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 967,
+      "color": [
+        0.0,
+        0.6666666865348816,
+        0.30978867411613464
+      ]
+    },
+    {
+      "drawing": 5,
+      "initial_channel": 2,
+      "final_channel": 7,
+      "panel": 0,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 410,
+      "color": [
+        0.20000000298023224,
+        0.23135729134082794,
+        0.5921568870544434
+      ]
+    },
+    {
+      "drawing": 109,
+      "initial_channel": 4,
+      "final_channel": 6,
+      "panel": 1,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 498,
+      "color": [
+        0.0,
+        0.6666666865348816,
+        0.30978867411613464
+      ]
+    },
+    {
+      "drawing": 110,
+      "initial_channel": 4,
+      "final_channel": 7,
+      "panel": 1,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 1246,
+      "color": [
+        0.20000000298023224,
+        0.23135729134082794,
+        0.5921568870544434
+      ]
+    },
+    {
+      "drawing": 261,
+      "initial_channel": 6,
+      "final_channel": 7,
+      "panel": 2,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 1199,
+      "color": [
+        0.20000000298023224,
+        0.23135729134082794,
+        0.5921568870544434
+      ]
+    },
+    {
+      "drawing": 262,
+      "initial_channel": 6,
+      "final_channel": 7,
+      "panel": 2,
+      "width": 2.117436408996582,
+      "dashes": "[ 2.117332 6.351986 ] 0",
+      "points": 61,
+      "color": [
+        0.20000000298023224,
+        0.23135729134082794,
+        0.5921568870544434
+      ]
+    },
+    {
+      "drawing": 467,
+      "initial_channel": 2,
+      "final_channel": 3,
+      "panel": 3,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 310,
+      "color": [
+        0.9176470637321472,
+        0.14901961386203766,
+        0.5647059082984924
+      ]
+    },
+    {
+      "drawing": 468,
+      "initial_channel": 2,
+      "final_channel": 5,
+      "panel": 3,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 326,
+      "color": [
+        0.9647058844566345,
+        0.6862592697143555,
+        0.14901961386203766
+      ]
+    },
+    {
+      "drawing": 469,
+      "initial_channel": 2,
+      "final_channel": 6,
+      "panel": 3,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 309,
+      "color": [
+        0.0,
+        0.6666666865348816,
+        0.30978867411613464
+      ]
+    },
+    {
+      "drawing": 593,
+      "initial_channel": 3,
+      "final_channel": 5,
+      "panel": 4,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 239,
+      "color": [
+        0.9647058844566345,
+        0.6862592697143555,
+        0.14901961386203766
+      ]
+    },
+    {
+      "drawing": 594,
+      "initial_channel": 3,
+      "final_channel": 6,
+      "panel": 4,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 281,
+      "color": [
+        0.0,
+        0.6666666865348816,
+        0.30978867411613464
+      ]
+    },
+    {
+      "drawing": 766,
+      "initial_channel": 5,
+      "final_channel": 6,
+      "panel": 5,
+      "width": 1.2702659368515015,
+      "dashes": "[] 0",
+      "points": 278,
+      "color": [
+        0.0,
+        0.6666666865348816,
+        0.30978867411613464
+      ]
+    },
+    {
+      "drawing": 767,
+      "initial_channel": 5,
+      "final_channel": 6,
+      "panel": 5,
+      "width": 2.117436408996582,
+      "dashes": "[ 2.117332 6.352091 ] 0",
+      "points": 66,
+      "color": [
+        0.0,
+        0.6666666865348816,
+        0.30978867411613464
+      ]
+    }
+  ],
+  "missing": "No CDS numbers were received. All vectors below the plotted floor are missing. Accuracy is limited by original plotting and interpolation, not the underlying quantum solver."
+}

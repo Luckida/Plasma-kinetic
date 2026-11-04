@@ -1,0 +1,168 @@
+{
+  "schema": "ParticleReactions-1",
+  "reviewed": true,
+  "reactions": [
+    {
+      "id": "UMIST22:74",
+      "reactants": {
+        "H-": 1,
+        "H": 1
+      },
+      "products": {
+        "H2": 1,
+        "e": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "UMIST22:74",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 74; 10.1103/PhysRevA.82.042708",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:500",
+      "reactants": {
+        "H": 1,
+        "H2+": 1
+      },
+      "products": {
+        "H2": 1,
+        "H+": 1
+      },
+      "kind": "charge_exchange",
+      "rate_id": "UMIST22:500",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 500; 10.1063/1.437823",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:1524",
+      "reactants": {
+        "H2+": 1,
+        "e": 1
+      },
+      "products": {
+        "H": 2
+      },
+      "kind": "dissociative_recombination",
+      "rate_id": "UMIST22:1524",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 1524; 10.1016/0370-1573(90)90159-Y",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:1577",
+      "reactants": {
+        "H3+": 1,
+        "e": 1
+      },
+      "products": {
+        "H2": 1,
+        "H": 1
+      },
+      "kind": "dissociative_recombination",
+      "rate_id": "UMIST22:1577",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 1577; 10.1103/PhysRevA.70.052716",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:1578",
+      "reactants": {
+        "H3+": 1,
+        "e": 1
+      },
+      "products": {
+        "H": 3
+      },
+      "kind": "dissociative_recombination",
+      "rate_id": "UMIST22:1578",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 1578; 10.1103/PhysRevA.70.052716",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:3196",
+      "reactants": {
+        "H2+": 1,
+        "H2": 1
+      },
+      "products": {
+        "H3+": 1,
+        "H": 1
+      },
+      "kind": "heavy_chemistry",
+      "rate_id": "UMIST22:3196",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 3196; 10.1063/1.1681453",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:6353",
+      "reactants": {
+        "H-": 1,
+        "H+": 1
+      },
+      "products": {
+        "H": 2
+      },
+      "kind": "mutual_neutralization",
+      "rate_id": "UMIST22:6353",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 6353; 10.1086/590468",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:6354",
+      "reactants": {
+        "H-": 1,
+        "H2+": 1
+      },
+      "products": {
+        "H2": 1,
+        "H": 1
+      },
+      "kind": "mutual_neutralization",
+      "rate_id": "UMIST22:6354",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 6354; 10.1086/590468",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "UMIST22:6357",
+      "reactants": {
+        "H-": 1,
+        "H3+": 1
+      },
+      "products": {
+        "H": 2,
+        "H2": 1
+      },
+      "kind": "mutual_neutralization",
+      "rate_id": "UMIST22:6357",
+      "coefficient_convention": "event_rate",
+      "source": "UMIST Rate22, reaction 6357; 10.1086/590468",
+      "model_note": "Ground carrier chemistry; product internal rovibrational distribution not resolved."
+    },
+    {
+      "id": "LS05:Hplus_H:CX",
+      "reactants": {
+        "H+": 1,
+        "H": 1
+      },
+      "products": {
+        "H": 1,
+        "H+": 1
+      },
+      "kind": "charge_exchange",
+      "cross_section_id": "LS05:Hplus_H:CX",
+      "coefficient_convention": "unordered_cross_section",
+      "kinematics": "resonant_velocity_exchange",
+      "source": "Lindsay & Stebbings 2005, JGR 110 A12213; https://doi.org/10.1029/2005JA011298",
+      "model_note": "Straight-path resonant electron capture: neutral inherits incident ion velocity. Fit domain 0.005–250 keV laboratory equivalent, 2.5–125000 eV centre-of-mass. No low-energy extrapolation."
+    }
+  ],
+  "elements": [
+    "H"
+  ],
+  "selectors": {}
+}

@@ -1,0 +1,33 @@
+{
+  "version": "2.8.2",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "configuration": "configs/study_01_decay.json",
+  "configuration_sha256": "5a371f42ac173e973e4229cb147011ea77f7875a627fcabd06acbc0262c2ea4d",
+  "maximum_population_error_over_initial": 2.086162567138672e-15,
+  "upper_population_final_cm3": 673794.6999085973,
+  "quality": {
+    "version": "2.8.2",
+    "atomic_data_status": "available_channels_checked",
+    "data_issues": [],
+    "declared_data_models": [],
+    "accepted_steps": 500,
+    "rejected_steps": 0,
+    "elapsed_s": 4.285613406000266,
+    "spatial_particle_sources": 0,
+    "spatial_photon_sources": 0,
+    "charge_status": "passed",
+    "charge_max_relative_residual": 0.0,
+    "mass_status": "passed",
+    "mass_max_relative_residual": 6.705522537231446e-15,
+    "nuclei_status": "passed",
+    "nuclei_max_relative_residual": 6.705522537231445e-15,
+    "energy_status": "passed",
+    "energy_max_relative_residual": 5.285189891258946e-15,
+    "kinetic_status": "passed",
+    "kinetic_max_relative_residual": 6.1444006860256194e-15,
+    "reaction_photon_status": "passed",
+    "reaction_photon_max_relative_residual": 5.310514660631794e-16
+  },
+  "scope": "Real stored H coefficients; analytic evolution test, not an experimental validation of A."
+}

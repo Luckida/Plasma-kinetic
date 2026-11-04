@@ -1,0 +1,18 @@
+{
+  "schema": "ChemicalComponents-1",
+  "components": [
+    {
+      "id": "He2+",
+      "label": "He₂⁺ X²Σu⁺ (effective ground)",
+      "charge": 1,
+      "nuclei": {
+        "He": 2
+      },
+      "energy_anchors": {
+        "He_1": 1
+      },
+      "energy_offset_eV": -2.365,
+      "source": "D0(He2+) to He+ + He = 2.365 eV; https://doi.org/10.1039/D1CP05535F; ground carrier approximation"
+    }
+  ]
+}

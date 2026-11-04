@@ -1,0 +1,21 @@
+{
+  "source": "Garcia Munoz 2025, A&A 698 A199, Tables A5-A7; doi:10.1051/0004-6361/202555145",
+  "url": "https://arxiv.org/abs/2505.12148",
+  "tables": [
+    "A5",
+    "A6",
+    "A7"
+  ],
+  "temperatures_K": [
+    500.0,
+    2000.0,
+    5000.0,
+    10000.0
+  ],
+  "notes": [
+    "Original RD82 option preserved to avoid silently summing alternative datasets.",
+    "Proton rates below 3000 K are explicitly identified as an extrapolation already made by the source.",
+    "Only tabulated temperatures are supported.",
+    "Radiative CT photon partition is an explicit emission approximation."
+  ]
+}
