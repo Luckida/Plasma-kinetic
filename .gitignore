@@ -1,0 +1,40 @@
+# Local Python and GUI environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Reproducible downloads, caches and user results
+/cache/
+/outputs/
+/output_*/
+/configs/.atomic_photo*/
+/configs/.collision*/
+*.log
+*.tmp
+*.zip
+*.part
+.*.csv.*
+.*.zip.*
+/validation/case_inventory.json
+/data/elements/preparation_summary.csv
+/data/elements/process_coverage.csv
+/data/elements/preparation_report.json
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
